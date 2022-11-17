@@ -18,7 +18,6 @@ function App() {
     <main className="App">
       <Header />
 
-
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='login' element={<LoginRegisterPage />} />
@@ -26,11 +25,10 @@ function App() {
         <Route path='saved-recipes' element={<SavedRecipesPage />} />
         <Route path='recipes' element={<RecipeListPage />} />
 
-
-        <Route element={Error} /> 
+        <Route element={Error} />
         {/* Error component isn't rendering when I use an incorrect path */}
       </Routes>
-      </main>
+    </main>
   );
 }
 
