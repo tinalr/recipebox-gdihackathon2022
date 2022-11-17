@@ -22,7 +22,8 @@ function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='login' element={<LoginRegisterPage />} />
         <Route path='about' element={<AboutUsPage />} />
-        <Route element={Error} />
+        <Route element={Error} /> 
+        {/* Error component isn't rendering when I use an incorrect path */}
       </Routes>
 
         <nav>
@@ -38,19 +39,6 @@ function App() {
             </li>
           </ul>
         </nav>
-        
-      {/* <Routes>
-        <Route path="/about">
-          <AboutUsPage />
-        </Route>
-        <Route path="/login">
-          <LoginRegisterPage />
-        </Route>
-        <Route path="/">
-          <LandingPage />
-        </Route>
-      </Routes> */}
-    
       </main>
   );
 }
