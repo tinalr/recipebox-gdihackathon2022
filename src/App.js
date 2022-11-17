@@ -19,25 +19,25 @@ function App() {
     <main className="App">
       
       <Routes>
-        <Route path='/' element={<LandingPage />} exact />
-        <Route path='/login' element={<LoginRegisterPage />} />
-        <Route path='/about' element={<AboutUsPage />} />
+        <Route path='/' element={<LandingPage />} />
+        <Route path='login' element={<LoginRegisterPage />} />
+        <Route path='about' element={<AboutUsPage />} />
         <Route element={Error} />
       </Routes>
 
-        {/* <nav>
+        <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="login">Login</Link>
             </li>
           </ul>
-        </nav> */}
+        </nav>
         
       {/* <Routes>
         <Route path="/about">
