@@ -1,7 +1,7 @@
 
 const RecipeListPage = () => {
   return (
-    <div></div>
+    <div>Recipes</div>
   );
 };
 

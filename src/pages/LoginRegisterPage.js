@@ -1,7 +1,7 @@
 
 const LoginRegisterPage = () => {
   return (
-    <div></div>
+    <div>Login or Register</div>
   );
 };
 

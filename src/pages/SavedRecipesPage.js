@@ -1,7 +1,7 @@
 
 const SavedRecipesPage = () => {
   return (
-    <div></div>
+    <div>Saved Recipes</div>
   );
 };
 
