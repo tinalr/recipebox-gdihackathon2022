@@ -21,7 +21,7 @@ const RecipeListPage = () => {
   // API call retrieves 10 recipes with diet/intolerance selections
   // Only provides Image and Title and ID
   useEffect(() => {
-    axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca&diet=${foodDiet}&intolerances=${foodIntolerance}`)
+    axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca&diet=${foodDiet}&intolerances=${foodIntolerances}`)
       .then(response => { setResponseData(response.data.results) })
   }, []);
 
