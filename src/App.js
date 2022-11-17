@@ -19,7 +19,7 @@ function App() {
     <main className="App">
       
       <Routes>
-        <Route path='/' element={<RecipeListPage />} exact />
+        <Route path='/' element={<LandingPage />} exact />
         <Route path='/login' element={<LoginRegisterPage />} />
         <Route path='/about' element={<AboutUsPage />} />
         <Route element={Error} />

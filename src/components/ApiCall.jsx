@@ -6,7 +6,7 @@ const ApiCall = () => {
     const [responseData, setResponseData] = useState([]);
     useEffect(()=>{
         axios.get('https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca')
-            .then(response=>{setResponseData(response.results)})
+            .then(response=>{setResponseData(response.data.results)})
     }, []); 
 
     return(
@@ -14,11 +14,14 @@ const ApiCall = () => {
           <p>Outside Response</p>
           {responseData &&
             responseData.map((responseData, idx) => {
-            return <div key={idx}>
+            return (
+            <div key={responseData.id}>
               <p>Inside Response</p>
-              <p>{responseData.title}</p>
+              <p>ID: {responseData.id}</p>
+              <img src={responseData.image} alt={responseData.title}/>
+              <p>Title: {responseData.title}</p>
             </div>
-          })}
+          )})}
         </div>
     )
 }
