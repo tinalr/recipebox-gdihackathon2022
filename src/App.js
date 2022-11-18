@@ -10,7 +10,7 @@ import RecipeListPage from './pages/RecipeListPage';
 import SavedRecipesPage from './pages/SavedRecipesPage';
 import AboutUsPage from './pages/AboutUsPage';
 
-import SavedRecipesDetail from './pages/SavedRecipesDetail';
+import SavedRecipesDetail from './components/SavedRecipesDetail';
 
 import Error from './components/Error';
 import Header from './components/Header';
