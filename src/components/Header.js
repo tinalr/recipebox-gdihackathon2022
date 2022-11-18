@@ -33,9 +33,11 @@ function Header(args) {
             <NavItem>
               <NavLink to="saved-recipes">Saved Recipes</NavLink>
             </NavItem>
-            <NavItem>
+
+            {/* Commenting out the 'recipes' tab because we don't want users to navigate there directly, we want them to arrive there from the landing page after making selections */}
+            {/* <NavItem>
               <NavLink to="recipes">Recipes</NavLink>
-            </NavItem>
+            </NavItem> */}
 
             {/* for testing only */}
             <NavItem>
