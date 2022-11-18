@@ -25,7 +25,7 @@ const RecipeListPage = () => {
     axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca&diet=${foodDiet}&intolerances=${foodIntolerances}`)
       .then(response => { setResponseData(response.data.results) })
   }, []);
-
+  console.log(responseData);
   return (
     <div>
       <h1>{foodDiet}</h1>
