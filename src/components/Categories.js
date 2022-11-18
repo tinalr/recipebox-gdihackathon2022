@@ -1,10 +1,14 @@
+import React, { useEffect, useState } from 'react';
 import { Container, Col, Button, Row, CardBody } from "reactstrap";
 
-const Categories = () => {
+const Categories = (props) => {
+  // props.func('It works?');
+
   return (
     <>
       <div class="catergories-header">
         <h1 class="categories-header">Select a Category</h1>
+        <button onClick={()=>props.func('It works?')}>CLICK ME</button>
       </div>
       <Container class="cards-container">
         {/* Card 1  */}
