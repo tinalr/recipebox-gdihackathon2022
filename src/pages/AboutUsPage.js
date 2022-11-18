@@ -20,9 +20,9 @@ export default AboutUsPage;
 // <p>Our team came together around a passion for nutrition and inclusion for diverse dietary needs. Over the course of three days, we developed our application idea, coordinated teams for the frontend and backend, met in daily stand-ups, designed in Figma, worked asynchronously across timezones, thought through the user experience and built a close-knit community. All of us contributed to the success of this project, and we're pleased to present to you "Note to Chef"!</p>
 
 // {/* App Information */}
-// <p>Welcome to "Chef it Up", where you can find and filter recipes by dietary needs and restrictions with a clean and simple UI!  The "Chef it Up" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the app. From the home page, select any number of overlapping dierary restrictions and a curated list of 10 top recipes will populate!
+// <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the app. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!
 
-// If you find a recipe you enjoy, you can save it to your profile for future use. A notes feature  on saved recipes provides the ability to list adaptations to the recipe, track the success and struggles with each attempt, and rank the recipe difficulty. You can also store recipes to a collection if planning large family gatherings.
+// If you find a recipe you enjoy, you can save it to your profile for future use. A notes feature  on saved recipes provides the ability to list adaptations to the recipe, track the success and struggles with each attempt, and rank the recipe difficulty. You can also store recipes to a collection when planning large family gatherings.
 
 // "Chef it Up" makes it easy to take into consideration the unique dietary needs of yourself, and your guests!</p>
 
