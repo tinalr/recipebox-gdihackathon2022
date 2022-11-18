@@ -1,18 +1,27 @@
 import { Container, Col, Button, Row, CardBody } from "reactstrap";
+import { Link } from 'react-router-dom';
+import { useState } from "react";
 
-const Categories = () => {
+const Categories = (props) => {
+
+  const [dietType, setDietType] = useState('');
+  const [foodIntolerances, setIntolerances] = useState([]);
+
+  console.log(dietType);
+  console.log(foodIntolerances)
+
   return (
     <>
-      <div class="catergories-header">
-        <h1 class="categories-header">Select a Category</h1>
+      <div className="catergories-header">
+        <h1 className="categories-header">Select a Category</h1>
       </div>
-      <Container class="cards-container">
+      <Container className="cards-container">
         {/* Card 1  */}
         <Row xs="2">
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/vegetarian"> <Button color="success">VEGETARIAN</Button></a>
+              <Button onClick={() => setDietType('vegetarian')}>VEGETARIAN</Button>
             </CardBody>
           </Col>
 
@@ -20,7 +29,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/peanutfree"> <Button color="success">PEANUT FREE</Button></a>
+              <Button onClick={() => setIntolerances((intolerance) => [...intolerance, 'peanut'])}>PEANUT FREE</Button>
             </CardBody>
           </Col>
         </Row>
@@ -31,7 +40,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/glutenfree"><Button color="success">GLUTEN FREE</Button></a>
+              <Button onClick={() => setIntolerances((intolerance) => [ ...intolerance, 'gluten'])}>GLUTEN FREE</Button>
             </CardBody>
           </Col>
 
@@ -39,7 +48,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/saefoodfree"><Button color="success">SEAFOOD FREE</Button></a>
+              <Button onClick={() => setIntolerances((intolerance) => [...intolerance, 'seafood'])}>SEAFOOD FREE</Button>
             </CardBody>
           </Col>
         </Row>
@@ -49,7 +58,9 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/vegan"><Button color="success">VEGAN</Button></a>
+
+              <Button onClick={() => setDietType('vegan')}>VEGAN</Button>
+
             </CardBody>
           </Col>
 
@@ -57,7 +68,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/dairyfree"><Button color="success">DAIRY FREE </Button></a>
+              <Button onClick={() => setIntolerances((intolerance) => [...intolerance, 'dairy'])}>DAIRY FREE</Button>
             </CardBody>
           </Col>
         </Row>
@@ -67,7 +78,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/treenutfree"><Button color="success">TREENUT FREE</Button></a>
+              <Button onClick={() => setIntolerances((intolerance) => [...intolerance, 'treenut'])}>TREENUT FREE</Button>
             </CardBody>
           </Col>
 
@@ -75,8 +86,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-            <a href="/soyfree"> <Button color="success">SOY FREE</Button></a>
-            </CardBody>
+              <Button onClick={() => setIntolerances((intolerance) => [...intolerance, 'soy'])}>SOY FREE</Button>            </CardBody>
           </Col>
         </Row>
       </Container>

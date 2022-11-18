@@ -11,11 +11,11 @@ import {
   Button
 } from 'reactstrap';
 
-const RecipeListPage = () => {
+const RecipeListPage = (props) => {
 
   const [responseData, setResponseData] = useState([]);
 
-  const foodDiet = "Vegan"
+  const foodDiet = props.diet
   // vegan, vegetarian, ketogenic
   // &diet=${foodDiet}
   // https://spoonacular.com/food-api/docs#Diets
@@ -38,7 +38,7 @@ const RecipeListPage = () => {
   return (
     <>
       <Container>
-        <h1 className="text-center">{foodDiet}</h1>
+        <h1 className="text-center"></h1>
         <Row xs="2">
           {responseData &&
             responseData.map((responseData) => {
@@ -63,7 +63,7 @@ const RecipeListPage = () => {
                         {responseData.title}
                       </CardTitle>
                     </CardBody>
-                    <button>View Recipe</button>
+                    <Button>View Recipe</Button>
                     </Card>
                   </Col>
               )

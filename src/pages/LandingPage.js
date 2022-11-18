@@ -6,7 +6,7 @@ const LandingPage =() =>{
   return(
   <div>
  
-     <Categories/>
+     <Categories diet='vegan'/>
   </div>
   );
 };
