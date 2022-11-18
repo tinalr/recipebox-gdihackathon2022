@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Container, Col, Button, Row, CardBody } from "reactstrap";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
@@ -12,8 +13,9 @@ const Categories = () => {
 
   return (
     <>
-      <div className="catergories-header">
-        <h1 className="categories-header">Select a Category</h1>
+      <div class="catergories-header">
+        <h1 class="categories-header">Select a Category</h1>
+        <button onClick={()=>props.func('It works?')}>CLICK ME</button>
       </div>
       <Container className="cards-container">
         {/* Card 1  */}
