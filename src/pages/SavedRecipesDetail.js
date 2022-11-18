@@ -1,11 +1,13 @@
-import { Container, Row, Card, CardHeader, CardTitle, CardImg, CardText, CardBody } from "reactstrap";
+import { Col, Row, Container, Card, CardHeader, CardTitle, CardText, CardBody, CardFooter } from "reactstrap";
 
 const SavedRecipesDetail = () => {
   return (
-    <Container>
-      <Card>
+    <>
+
+      <Card style={{ backgroundColor: 'lightblue', width: '50%', }}>
         <CardHeader tag='h1'>RecipeName</CardHeader>
-        <img src="chrome://branding/content/about-logo@2x.png" alt=""/>
+        <img src="chrome://branding/content/about-logo@2x.png" alt="" />
+
         <CardBody>
           <CardTitle tag='h2'>Ingredients</CardTitle>
           <CardText>
@@ -15,9 +17,15 @@ const SavedRecipesDetail = () => {
           <CardText>
             Steps List
           </CardText>
+          <CardTitle tag='h2'>Notes</CardTitle>
+          <CardText>
+            Recipe Notes
+          </CardText>
         </CardBody>
+
       </Card>
-    </Container>
+
+    </>
   );
 };
 export default SavedRecipesDetail;
