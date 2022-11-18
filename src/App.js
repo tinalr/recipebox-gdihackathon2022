@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Routes,
   Route,
@@ -19,16 +19,27 @@ import RegisterForm from './components/RegisterForm';
 
 
 function App() {
+  const [stateDataIntolerances, setStateDataIntolerances] = useState("");
+  const [stateDataDiet, setStateDataDiet] = useState("");
+
+  const pull_data = (data) => {
+    setStateDataIntolerances(data); // LOGS DATA FROM CHILD (array)
+  }
+
+  const pull_data2 = (data2) => {
+    setStateDataDiet(data2); // LOGS DATA FROM CHILD (array)
+  }
+
   return (
     <main className="App">
       <Header />
 
       <Routes>
-        <Route path='/' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2}/>} />
         <Route path='login' element={<LoginForm />} />
         <Route path='about' element={<AboutUsPage />} />
         <Route path='saved-recipes' element={<SavedRecipesPage />} />
-        <Route path='recipes' element={<RecipeListPage />} />
+        <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
 
         <Route path='register' element={<RegisterForm />}/>
 

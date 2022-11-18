@@ -12,33 +12,31 @@ import {
 } from 'reactstrap';
 
 const RecipeListPage = (props) => {
-
   const [responseData, setResponseData] = useState([]);
 
-  const foodDiet = props.diet
-  // vegan, vegetarian, ketogenic
-  // &diet=${foodDiet}
-  // https://spoonacular.com/food-api/docs#Diets
-
-  const foodIntolerances = ""
-  // peanut, dairy, seafood, soy, wheat
-  // &intolerances=${foodIntolerances}
-  // https://spoonacular.com/food-api/docs#Intolerances
-  // for each intolerance selected, send to this page "&intolerances=*intoleranceselected*"
-  // concatenate all selections together into one variable
-  // user can select 1 diet and as many intolerances as are available as buttons on previous page
-
-  // API call retrieves 10 recipes with diet/intolerance selections
-  // Only provides Image and Title and ID
   useEffect(() => {
-    axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca&diet=${foodDiet}&intolerances=${foodIntolerances}`)
+    const apiBeginningI = "&intolerances="
+    const apiBeginningD = "&diet="
+    const diet = props.diet
+    const newVarD = apiBeginningD.concat(diet)
+    const arr = props.intolerances;
+    console.log(arr)
+    let endOfApi = newVarD
+    for(let i = 0; i < arr.length; i++){
+      let newVarI = apiBeginningI.concat(arr[i])
+      endOfApi += newVarI
+      console.log(endOfApi)
+    }
+    axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=a5c113f14a144ce89576d7bcbc7f3dca&${endOfApi}`)
       .then(response => { setResponseData(response.data.results) })
   }, []);
   console.log(responseData);
+
   return (
     <>
       <Container>
         <h1 className="text-center"></h1>
+        <p>Filters: {props.data}</p>
         <Row xs="2">
           {responseData &&
             responseData.map((responseData) => {
