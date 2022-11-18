@@ -79,6 +79,7 @@ const Categories = () => {
         </Row>
       </Container>
     </>
+
   );
 };
 

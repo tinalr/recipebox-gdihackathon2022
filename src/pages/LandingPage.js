@@ -1,3 +1,4 @@
+
 import Categories from "../components/Categories";
 
 
@@ -7,7 +8,6 @@ const LandingPage =() =>{
  
      <Categories/>
   </div>
- 
   );
 };
 
