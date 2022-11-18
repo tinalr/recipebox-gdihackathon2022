@@ -4,7 +4,7 @@ const Categories = () => {
   return (
     <>
       <div class="catergories-header">
-        <h1>Select a Category</h1>
+        <h1 class="categories-header">Select a Category</h1>
       </div>
       <Container class="cards-container">
         {/* Card 1  */}
