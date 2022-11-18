@@ -12,7 +12,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">VEGETARAIN</CardTitle>
+              <CardTitle tag="h5">VEGETARIAN</CardTitle>
             </CardBody>
           </Col>
 
