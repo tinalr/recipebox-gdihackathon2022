@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
 import {
   Container,
   Col,
@@ -8,12 +7,18 @@ import {
   Card,
   CardBody,
   CardTitle,
-  Button
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter
 } from 'reactstrap';
+import ModalRecipeListDetail from '../components/ModalRecipeListDetail';
 
 const RecipeListPage = (props) => {
   const [responseData, setResponseData] = useState([]);
 
+  // The API call:
   useEffect(() => {
     const apiBeginningI = "&intolerances="
     const apiBeginningD = "&diet="
@@ -22,7 +27,7 @@ const RecipeListPage = (props) => {
     const arr = props.intolerances;
     console.log(arr)
     let endOfApi = newVarD
-    for(let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
       let newVarI = apiBeginningI.concat(arr[i])
       endOfApi += newVarI
       console.log(endOfApi)
@@ -31,6 +36,9 @@ const RecipeListPage = (props) => {
       .then(response => { setResponseData(response.data.results) })
   }, []);
   console.log(responseData);
+
+
+  
 
   return (
     <>
@@ -41,8 +49,8 @@ const RecipeListPage = (props) => {
           {responseData &&
             responseData.map((responseData) => {
               return (
-                <Col key={responseData.id}  sm="6">
-                  <Card 
+                <Col key={responseData.id} sm="6">
+                  <Card
                     className="p-3 my-2 text-center"
                     style={{
                       height: '28rem'
@@ -61,9 +69,11 @@ const RecipeListPage = (props) => {
                         {responseData.title}
                       </CardTitle>
                     </CardBody>
-                    <Button>View Recipe</Button>
-                    </Card>
-                  </Col>
+                    
+                    <ModalRecipeListDetail detail={responseData} />
+                    
+                  </Card>
+                </Col>
               )
             })}</Row>
       </Container>
