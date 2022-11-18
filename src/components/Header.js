@@ -28,7 +28,7 @@ function Header(args) {
               <NavLink to='about'>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='login'>Register</NavLink>
+              <NavLink to='login'>Login</NavLink>
             </NavItem>
             <NavItem>
               <NavLink to='saved-recipes'>Saved Recipes</NavLink>
