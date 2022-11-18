@@ -1,6 +1,6 @@
 import { Col, Row, ListGroup, ListGroupItem, Container, Card, CardHeader, CardTitle, CardText, CardBody, CardFooter } from "reactstrap";
 
-const SavedRecipesDetail = () => {
+const SavedRecipesDetailPage = () => {
   return (
     <>
       <Container>
@@ -44,4 +44,4 @@ const SavedRecipesDetail = () => {
     </>
   );
 };
-export default SavedRecipesDetail;
+export default SavedRecipesDetailPage;

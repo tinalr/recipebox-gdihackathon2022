@@ -10,7 +10,7 @@ import RecipeListPage from './pages/RecipeListPage';
 import SavedRecipesPage from './pages/SavedRecipesPage';
 import AboutUsPage from './pages/AboutUsPage';
 
-import SavedRecipesDetail from './components/SavedRecipesDetail';
+import SavedRecipesDetail from './pages/SavedRecipesDetailPage';
 
 import Error from './components/Error';
 import Header from './components/Header';
@@ -38,14 +38,15 @@ function App() {
         <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2}/>} />
         <Route path='login' element={<LoginForm />} />
         <Route path='about' element={<AboutUsPage />} />
-        <Route path='saved-recipes' element={<SavedRecipesPage />} />
+        
+        <Route path='saved-recipes' element={<SavedRecipesPage />} >
+          <Route path=':id' element={<SavedRecipesDetail />} />
+        </Route>
+        
+
         <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
 
         <Route path='register' element={<RegisterForm />}/>
-
-        {/* for testing only */}
-        <Route path='detail' element={<SavedRecipesDetail />} />
-        {/* for testing only */}
 
         <Route element={Error} />
         {/* Error component isn't rendering when I use an incorrect path */}
