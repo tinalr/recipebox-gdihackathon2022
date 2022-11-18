@@ -20,7 +20,8 @@ const Gauri = () => {
     <div>
       <Card
         style={{
-          width: '18rem'
+          width: '18rem',
+          border:'1rem solid #70BA89'
         }}
       >
           <img
@@ -37,8 +38,8 @@ const Gauri = () => {
           >
             Project Manager
           </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the bulk of the card‘s content.
+          <CardText className="text-white">
+            Read More
           </CardText>
           <a href="www.linkedin.com/in/gtilloo"><img src={LinkedIn} alt="LinkedIn" 
           style={{
