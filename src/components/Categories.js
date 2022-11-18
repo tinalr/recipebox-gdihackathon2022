@@ -1,4 +1,4 @@
-import { Container, Col, Button, Row, CardTitle, CardBody } from "reactstrap";
+import { Container, Col, Button, Row, CardBody } from "reactstrap";
 
 const Categories = () => {
   return (
