@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
-import Header from "../components/Header"
-function LandingPage() {
-  return (
-  <>
-  <Header/>
-  </>
+import Categories from "../components/Categories";
+
+
+const LandingPage =() =>{
+  return(
+  <div>
+ 
+     <Categories/>
+  </div>
+ 
   );
 };
 

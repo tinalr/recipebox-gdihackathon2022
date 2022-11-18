@@ -1,105 +1,138 @@
-import React, { useState } from 'react';
+
 import {
     Container, 
     Col, 
-    Row
+    Row, 
+     CardTitle, 
+     CardBody,
 } from 'reactstrap';
 
-<>
+const Categories =() =>{
+    return(
+    <>
+    <div>
+        <h1>Select a Category</h1>
+    </div>
 <Container>
-  <h6>
-    xs=“2“
-  </h6>
+  
+  {/* Card 1  */}
   <Row xs="2">
-    <Col className="bg-light border">
-      Column
+     <Col className=" border">
+     <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-  </Row>
-  <h6>
-    xs=“3“
-  </h6>
-  <Row xs="3">
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
+ 
+    {/*Card 2   */}
+    <Col className="border">
+    <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
   </Row>
-  <h6>
-    xs=“4“
-  </h6>
-  <Row xs="4">
-    <Col className="bg-light border">
-      Column
+ 
+    {/*Card 3   */}
+
+    <Row xs="2">
+     <Col className=" border">
+     <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-  </Row>
-  <h6>
-    xs=“4“
-  </h6>
-  <Row xs="4">
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col
-      className="bg-light border"
-      xs="6"
-    >
-      xs=“6“
-    </Col>
-    <Col className="bg-light border">
-      Column
+ 
+    {/*Card 4   */}
+    <Col className="border">
+    <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
   </Row>
-  <h6>
-    xs=“1“ sm=“2“ md=“4“
-  </h6>
-  <Row
-    md="4"
-    sm="2"
-    xs="1"
-  >
-    <Col className="bg-light border">
-      Column
+ 
+        {/* Card 5  */}
+        <Row xs="2">
+     <Col className=" border">
+     <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
-    </Col>
-    <Col className="bg-light border">
-      Column
+ 
+    {/*Card 6  */}
+    <Col className="border">
+    <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
     </Col>
   </Row>
+  <Row xs="2">
+     <Col className=" border">
+     <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
+    </Col>
+ 
+    {/*Card 7  */}
+    <Col className="border">
+    <img
+    alt="Card"
+    src="https://picsum.photos/300/200"
+  />
+  <CardBody>
+    <CardTitle tag="h5">
+      Card Title
+    </CardTitle>
+      </CardBody>
+    </Col>
+  </Row>
+ 
+ 
 </Container>
 
 
 </>
+ 
+ );
+};
+
+export default Categories; 
