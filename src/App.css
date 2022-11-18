@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Categories */
+.categories-col{
+  padding:5px;
+}
