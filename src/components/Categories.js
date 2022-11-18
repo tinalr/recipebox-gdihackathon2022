@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Container, Col, Button, Row, CardBody } from "reactstrap";
 
 const Categories = (props) => {
-  // props.func('It works?');
 
   return (
     <>
