@@ -10,7 +10,9 @@ const LandingPage =(props) =>{
 
   return(
   <div>
+
     <Categories func={pull_data}/>
+
   </div>
   );
 };

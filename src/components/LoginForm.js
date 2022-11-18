@@ -44,7 +44,7 @@ const LoginForm = () => {
                 Login
               </CardTitle>
               <form onSubmit={onSubmitHandler}>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" className="text-start">Email</label>
                 <input
                   className="form-control mb-3"
                   type="email"
