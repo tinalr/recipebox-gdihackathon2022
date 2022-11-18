@@ -42,7 +42,12 @@ const RecipeListPage = () => {
             responseData.map((responseData) => {
               return (
                 <Col key={responseData.id}  sm="6">
-                  <Card className="p-3 my-2 text-center">
+                  <Card 
+                    className="p-3 my-2 text-center"
+                    style={{
+                      height: '28rem'
+                    }}
+                  >
                     <img
                       className="align-self-center"
                       alt={responseData.title}
