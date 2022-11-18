@@ -111,10 +111,12 @@ const LandingPage = (props) => {
   return (
     <>
       <Container>
+
         <Row>
+
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <h4 className="">Select a Diet</h4>
-            <p>Select 0-1</p>
+
+            <Row><h4 className=""><Col>Search Recipes by Diet</Col></h4></Row>
             <Row xs="2" className="mb-3">
               <Col>
                 <Card
@@ -138,9 +140,11 @@ const LandingPage = (props) => {
                   <p className={(cardTwoSelected) ? "opacity-75 text-center" : "text-center"}>VEGAN</p>
                 </Card>
               </Col>
+
+
             </Row>
-            <h4 className="">Select Any Intolerances</h4>
-            <p>Select 0-6</p>
+
+            <Row><Col><h4 className="">Search Recipes by Intolerance(s)</h4></Col></Row>
             <Row xs="2" className="mb-3" >
               <Col>
                 {/* Card 3 */}
@@ -214,18 +218,22 @@ const LandingPage = (props) => {
                   style={{
                     width: '18rem'
                   }}>
-                  <img alt="Card" src={pasta2} className={(cardEightSelected) ? "opacity-75" : ""} />
+                  <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-75" : ""} />
                   <p className={(cardEightSelected) ? "opacity-75 text-center" : "text-center"}>SOY FREE</p>
                 </Card>
               </Col>
             </Row>
 
-            <Col className="text-center">
-              <button className="m-3 btn btn-danger" onClick={() => clearIntolerances()}>Clear</button>
-              <button className="m-3 btn btn-primary" onClick={() => handleSubmit()}>Submit</button>
-            </Col>
+            <Row>
+              <Col className="text-center">
+                <button className="m-3 btn btn-danger" onClick={() => clearIntolerances()}>Clear</button>
+                <button className="m-3 btn btn-primary" onClick={() => handleSubmit()}>Submit</button>
+              </Col>
+            </Row>
           </Col>
         </Row>
+
+
       </Container>
     </>
   );
