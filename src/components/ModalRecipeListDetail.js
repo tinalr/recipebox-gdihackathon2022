@@ -22,12 +22,14 @@ const ModalRecipeListDetail = (props) => {
   return (
     <div>
       <Button onClick={toggle}>View Recipe</Button>
-      <Modal isOpen={modal} toggle={toggle} scrollable='true' fullscreen>
-        <ModalHeader toggle={toggle}>{props.title}</ModalHeader>
+
+      <Modal isOpen={modal} toggle={toggle} fullscreen>
+        
+        <ModalHeader toggle={toggle}>{props.detail.title}</ModalHeader>
         <img
           className="align-self-center"
-          alt={props.title}
-          src={props.image}
+          alt={props.detail.title}
+          src={props.detail.image}
           style={{
             width: '25rem'
           }}
