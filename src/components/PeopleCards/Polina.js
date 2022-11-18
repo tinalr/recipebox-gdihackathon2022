@@ -20,7 +20,9 @@ const Polina = () => {
     <div>
       <Card
         style={{
-          width: '18rem'
+          width: '18rem',
+          // height:'28rem'
+          border:'1rem solid #70BA89'
         }}
       >
         <img
@@ -40,8 +42,8 @@ const Polina = () => {
           >
             Frontend Developer
           </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the bulk of the card‘s content.
+          <CardText className="text-white">
+            Read More
           </CardText>
           <a href="https://github.com/ph202"><img src={Github} alt="Github" 
           className="mx-2"

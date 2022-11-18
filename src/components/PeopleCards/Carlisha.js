@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfilePic from '../../assets/profilepics/Placeholder3.png'
+import CarlishaW from '../../assets/profilepics/CarlishaWilson.JPG'
 import {
   Container,
   Col,
@@ -20,31 +20,46 @@ const Carlisha = () => {
     <div>
       <Card
         style={{
-          width: '18rem'
+          width: '18rem',
+          border:'1rem solid #70BA89'
         }}
       >
+        <div style={{
+          width: '256px',
+          height: '256px',
+          position: 'relative',
+          overflow: 'hidden',
+          borderRadius: '50%'
+        }}>
           <img
-            src={ProfilePic}
+            src={CarlishaW}
             alt="Profile Picture"
+            style={{
+              display: 'inline',
+              margin: '0 auto',
+              height: 'auto',
+              width: '100%'
+            }}
           />
-        <CardBody>
-          <CardTitle tag="h5">
-            Carlisha Wilson
-          </CardTitle>
-          <CardSubtitle
-            className="mb-2 text-muted"
-            tag="h6"
-          >
-            UX/UI, Design
-          </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the bulk of the card‘s content.
-          </CardText>
-          <a href="http://linkedin.com/in/carlishawilson"><img src={LinkedIn} alt="LinkedIn" 
-          style={{
-            width: '3rem'
-          }} /></a>
-        </CardBody>
+          </div>
+          <CardBody>
+            <CardTitle tag="h5">
+              Carlisha Wilson
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+              tag="h6"
+            >
+              UX/UI, Design
+            </CardSubtitle>
+            <CardText className="text-white">
+              Read More
+            </CardText>
+            <a href="http://linkedin.com/in/carlishawilson"><img src={LinkedIn} alt="LinkedIn"
+              style={{
+                width: '3rem'
+              }} /></a>
+          </CardBody>
       </Card >
     </div >
   )

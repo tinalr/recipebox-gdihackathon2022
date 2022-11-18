@@ -1,5 +1,5 @@
 import React from 'react'
-import Placeholder from '../../assets/profilepics/Placeholder.png'
+import ChristineB from '../../assets/profilepics/ChristineBoegemann.jpeg'
 import {
   Container,
   Col,
@@ -12,17 +12,38 @@ import {
   CardBody
 } from 'reactstrap';
 import Github from '../../assets/icons/github.png'
+import useCollapse from 'react-collapsed';
+
 
 const Christine = () => {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+
   return (
     <div>
       <Card
         style={{
-          width: '18rem'
+          width: '18rem',
+          border:'1rem solid #70BA89'
         }}
       >
-        <img src={Placeholder} alt="Profile Picture"/>
-        <CardBody>
+        <div style={{
+          width: '256px',
+          height: '256px',
+          position: 'relative',
+          overflow: 'hidden',
+          borderRadius: '50%'
+        }}>
+          <img
+            src={ChristineB}
+            alt="Profile Picture"
+            style={{
+              display: 'inline',
+              margin: '0 auto',
+              height: 'auto',
+              width: '100%'
+            }}
+          />
+        </div>        <CardBody>
           <CardTitle tag="h5">
             Christine Boegemann
           </CardTitle>
@@ -32,12 +53,23 @@ const Christine = () => {
           >
             Backend Developer
           </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the bulk of the card‘s content.
-          </CardText>
-          <a href="https://github.com/cboegemann"><img 
-            src={Github} 
-            alt="Github" 
+          <div 
+            className="collapsible"
+          >
+            <div className="header text-primary mb-3" {...getToggleProps()}>
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </div>
+            <div {...getCollapseProps()}>
+              <div className="content">
+                <CardText className="mb-3">
+                  Christine studied C# and .NET in a coding bootcamp, and she utilized those skills by coding server-side logic for this app. She is currently studying Blazor in her spare time, and she is looking to pivot into a role as a .NET developer. She is passionate about learning about accessibility, watching silly cartoons, and creating new recipes.
+                </CardText>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/cboegemann"><img
+            src={Github}
+            alt="Github"
             style={{
               width: '3rem'
             }}

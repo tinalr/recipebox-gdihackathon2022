@@ -1,5 +1,5 @@
 import React from 'react'
-import Placeholder from '../../assets/profilepics/Placeholder3.png'
+import Placeholder from '../../assets/profilepics/Placeholder4.png'
 import {
   Container,
   Col,
@@ -20,7 +20,8 @@ const Lindsay = () => {
     <div>
       <Card
         style={{
-          width: '18rem'
+          width: '18rem',
+          border:'1rem solid #70BA89'
         }}
       >
         <img
@@ -40,9 +41,9 @@ const Lindsay = () => {
           >
             Backend Developer
           </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the bulk of the card‘s content.
-          </CardText>
+          <CardText className="text-white">
+              Read More
+            </CardText>
         </CardBody>
       </Card>
     </div>
