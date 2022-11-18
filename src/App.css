@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+.logo{
+  max-width:150px;
+  max-height: 150px;
+}
+
+/* Categories */
+.categories-col{
+  padding:5px;
+}
