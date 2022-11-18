@@ -36,6 +36,12 @@ function Header(args) {
             <NavItem>
               <NavLink to="recipes">Recipes</NavLink>
             </NavItem>
+
+            {/* for testing only */}
+            <NavItem>
+              <NavLink to='detail'>Detail</NavLink>
+            </NavItem>
+            {/* for testing only */}
           </Nav>
         </Collapse>
       </Navbar>

@@ -125,14 +125,9 @@ const Categories =() =>{
       </CardBody>
     </Col>
   </Row>
- 
- 
 </Container>
-
-
-</>
- 
- );
+      </>
+  );
 };
 
-export default Categories; 
+export default Categories;
