@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 const SavedRecipesListCard = (props) => {
 
   return (
-    <Link to={`${props.id}`}>
+    <Link to={`${props.detail.id}`}>
 
       <Card
         className="p-3 my-2 text-center"
@@ -22,17 +22,18 @@ const SavedRecipesListCard = (props) => {
       >
         <img
           className="align-self-center"
-          alt={props.title}
-          src={props.img}
+          alt={props.detail.title}
+          src={props.detail.image}
           style={{
             width: '25rem'
           }}
         />
         <CardBody>
           <CardTitle tag="h5" >
-            {props.title}
+            {props.detail.title}
           </CardTitle>
         </CardBody>
+        title
         <Button>View My Recipe</Button>
       </Card>
 
