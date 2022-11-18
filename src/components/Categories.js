@@ -1,4 +1,4 @@
-import { Container, Col, Row, CardTitle, CardBody } from "reactstrap";
+import { Container, Col, Button, Row, CardTitle, CardBody } from "reactstrap";
 
 const Categories = () => {
   return (
@@ -12,7 +12,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">VEGETARIAN</CardTitle>
+              <Button color="success">VEGETARIAN</Button>
             </CardBody>
           </Col>
 
@@ -20,7 +20,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">PEANUT FREE</CardTitle>
+              <Button color="success">PEANUT FREE</Button>
             </CardBody>
           </Col>
         </Row>
@@ -31,7 +31,8 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">GLUTEN FREE</CardTitle>
+          
+              <Button color="success">GLUTEN FREE</Button>
             </CardBody>
           </Col>
 
@@ -39,7 +40,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">SEAFOOD FREE </CardTitle>
+              <Button color="success">SEAFOOD FREE</Button>
             </CardBody>
           </Col>
         </Row>
@@ -49,7 +50,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">VEGAN</CardTitle>
+              <Button color="success">VEGAN</Button>
             </CardBody>
           </Col>
 
@@ -57,29 +58,30 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">DAIRY FREE </CardTitle>
+              <Button color="success">DAIRY FREE </Button>
             </CardBody>
           </Col>
         </Row>
+
+        {/*Card 7  */}
         <Row xs="2">
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">TREENUT FREE</CardTitle>
+              <Button color="success">TREENUT FREE</Button>
             </CardBody>
           </Col>
 
-          {/*Card 7  */}
+          {/*Card 8 */}
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">SOY FREE</CardTitle>
+              <Button color="success">SOY FREE</Button>
             </CardBody>
           </Col>
         </Row>
       </Container>
     </>
-
   );
 };
 
