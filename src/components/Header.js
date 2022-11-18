@@ -16,22 +16,24 @@ function Header(args) {
 
   return (
     <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">Logo</NavbarBrand>
+
+      
+      <Navbar {...args} className='navbar-expand-lg bg-light'>
+        <NavbarBrand href="/">Note to Chef</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
+          <Nav className="me-auto mb-2 mb-lg-0" navbar>
+            <NavItem className="me-3">
               <NavLink to="/">Home</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="me-3">
               <NavLink to="about">About</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="me-3">
               <NavLink to='login'>Login</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="saved-recipes">Saved Recipes</NavLink>
+            <NavItem className="me-3">
+              <NavLink to="collections">Collections</NavLink>
             </NavItem>
 
             {/* Commenting out the 'recipes' tab because we don't want users to navigate there directly, we want them to arrive there from the landing page after making selections */}
@@ -41,9 +43,10 @@ function Header(args) {
 
             {/* for testing only */}
             <NavItem>
-              <NavLink to='detail'>Detail</NavLink>
+              <NavLink to='detail'>Detail-TESTING</NavLink>
             </NavItem>
             {/* for testing only */}
+
           </Nav>
         </Collapse>
       </Navbar>

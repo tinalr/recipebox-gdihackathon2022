@@ -38,7 +38,7 @@ function App() {
         <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2}/>} />
         <Route path='login' element={<LoginForm />} />
         <Route path='about' element={<AboutUsPage />} />
-        <Route path='saved-recipes' element={<SavedRecipesPage />} />
+        <Route path='collections' element={<SavedRecipesPage />} />
         <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
 
         <Route path='register' element={<RegisterForm />}/>
