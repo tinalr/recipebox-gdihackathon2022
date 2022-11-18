@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 const RecipeListPage = () => {
 
@@ -33,7 +34,7 @@ const RecipeListPage = () => {
           return (
           <div key={responseData.id}>
             <img src={responseData.image} alt={responseData.title}/>
-            <button>{responseData.title}</button>
+            <Button>{responseData.title}</Button>
           </div>
         )})}
     </div>
