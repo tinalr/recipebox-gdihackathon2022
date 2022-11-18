@@ -2,7 +2,7 @@ import { Container, Col, Button, Row, CardBody } from "reactstrap";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 
-const Categories = (props) => {
+const Categories = () => {
 
   const [dietType, setDietType] = useState('');
   const [foodIntolerances, setIntolerances] = useState([]);
