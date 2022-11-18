@@ -12,7 +12,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">VEGETARAIN</CardTitle>
             </CardBody>
           </Col>
 
@@ -20,7 +20,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">PEANUT FREE</CardTitle>
             </CardBody>
           </Col>
         </Row>
@@ -31,7 +31,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">GLUTEN FREE</CardTitle>
             </CardBody>
           </Col>
 
@@ -39,7 +39,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">SEAFOOD FREE </CardTitle>
             </CardBody>
           </Col>
         </Row>
@@ -49,7 +49,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">VEGAN</CardTitle>
             </CardBody>
           </Col>
 
@@ -57,7 +57,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">DAIRY FREE </CardTitle>
             </CardBody>
           </Col>
         </Row>
@@ -65,7 +65,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">TREENUT FREE</CardTitle>
             </CardBody>
           </Col>
 
@@ -73,7 +73,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <CardTitle tag="h5">Card Title</CardTitle>
+              <CardTitle tag="h5">SOY FREE</CardTitle>
             </CardBody>
           </Col>
         </Row>
