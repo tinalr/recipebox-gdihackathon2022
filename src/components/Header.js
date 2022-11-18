@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -6,8 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+} from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 function Header(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,19 +22,19 @@ function Header(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='about'>About</NavLink>
+              <NavLink to="about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='login'>Register</NavLink>
+              <NavLink to='login'>Login</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='saved-recipes'>Saved Recipes</NavLink>
+              <NavLink to="saved-recipes">Saved Recipes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='recipes'>Recipes</NavLink>
+              <NavLink to="recipes">Recipes</NavLink>
             </NavItem>
 
             {/* for testing only */}
@@ -43,7 +43,6 @@ function Header(args) {
             </NavItem>
             {/* for testing only */}
           </Nav>
-
         </Collapse>
       </Navbar>
     </div>

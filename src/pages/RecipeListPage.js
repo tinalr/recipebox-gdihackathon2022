@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button } from 'reactstrap';
+
+import {
+  Container,
+  Col,
+  Row,
+  Card,
+  CardBody,
+  CardTitle,
+  Button
+} from 'reactstrap';
 
 const RecipeListPage = () => {
 
@@ -27,17 +36,40 @@ const RecipeListPage = () => {
   }, []);
   console.log(responseData);
   return (
-    <div>
-      <h1>{foodDiet}</h1>
-      {responseData &&
-        responseData.map((responseData, idx) => {
-          return (
-          <div key={responseData.id}>
-            <img src={responseData.image} alt={responseData.title}/>
-            <Button>{responseData.title}</Button>
-          </div>
-        )})}
-    </div>
+    <>
+      <Container>
+        <h1 className="text-center">{foodDiet}</h1>
+        <Row xs="2">
+          {responseData &&
+            responseData.map((responseData) => {
+              return (
+                <Col key={responseData.id}  sm="6">
+                  <Card 
+                    className="p-3 my-2 text-center"
+                    style={{
+                      height: '28rem'
+                    }}
+                  >
+                    <img
+                      className="align-self-center"
+                      alt={responseData.title}
+                      src={responseData.image}
+                      style={{
+                        width: '25rem'
+                      }}
+                    />
+                    <CardBody>
+                      <CardTitle tag="h5" >
+                        {responseData.title}
+                      </CardTitle>
+                    </CardBody>
+                    <button>View Recipe</button>
+                    </Card>
+                  </Col>
+              )
+            })}</Row>
+      </Container>
+    </>
   );
 };
 

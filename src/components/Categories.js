@@ -1,109 +1,87 @@
-import React, { useState } from 'react';
-import {
-  Container,
-  Col,
-  Row
-} from 'reactstrap';
+import { Container, Col, Button, Row, CardBody } from "reactstrap";
 
 const Categories = () => {
   return (
-
     <>
-      <Container>
-        <h6>
-          xs=“2“
-        </h6>
+      <div class="catergories-header">
+        <h1 class="categories-header">Select a Category</h1>
+      </div>
+      <Container class="cards-container">
+        {/* Card 1  */}
         <Row xs="2">
-          <Col className="bg-light border">
-            Column
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/vegetarian"> <Button color="success">VEGETARIAN</Button></a>
+            </CardBody>
           </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-        </Row>
-        <h6>
-          xs=“3“
-        </h6>
-        <Row xs="3">
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
+
+          {/*Card 2   */}
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/peanutfree"> <Button color="success">PEANUT FREE</Button></a>
+            </CardBody>
           </Col>
         </Row>
-        <h6>
-          xs=“4“
-        </h6>
-        <Row xs="4">
-          <Col className="bg-light border">
-            Column
+
+        {/*Card 3   */}
+
+        <Row xs="2">
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/glutenfree"><Button color="success">GLUTEN FREE</Button></a>
+            </CardBody>
           </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-        </Row>
-        <h6>
-          xs=“4“
-        </h6>
-        <Row xs="4">
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col className="bg-light border">
-            Column
-          </Col>
-          <Col
-            className="bg-light border"
-            xs="6"
-          >
-            xs=“6“
-          </Col>
-          <Col className="bg-light border">
-            Column
+
+          {/*Card 4   */}
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/saefoodfree"><Button color="success">SEAFOOD FREE</Button></a>
+            </CardBody>
           </Col>
         </Row>
-        <h6>
-          xs=“1“ sm=“2“ md=“4“
-        </h6>
-        <Row
-          md="4"
-          sm="2"
-          xs="1"
-        >
-          <Col className="bg-light border">
-            Column
+
+        {/* Card 5  */}
+        <Row xs="2">
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/vegan"><Button color="success">VEGAN</Button></a>
+            </CardBody>
           </Col>
-          <Col className="bg-light border">
-            Column
+
+          {/*Card 6  */}
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/dairyfree"><Button color="success">DAIRY FREE </Button></a>
+            </CardBody>
           </Col>
-          <Col className="bg-light border">
-            Column
+        </Row>
+
+        {/*Card 7  */}
+        <Row xs="2">
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/treenutfree"><Button color="success">TREENUT FREE</Button></a>
+            </CardBody>
           </Col>
-          <Col className="bg-light border">
-            Column
+
+          {/*Card 8 */}
+          <Col className="categories-col">
+            <img alt="Card" src="https://picsum.photos/300/200" />
+            <CardBody>
+            <a href="/soyfree"> <Button color="success">SOY FREE</Button></a>
+            </CardBody>
           </Col>
         </Row>
       </Container>
-
     </>
   );
-}; export default Categories;
+};
+
+export default Categories;
