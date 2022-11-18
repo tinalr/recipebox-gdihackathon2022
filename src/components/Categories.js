@@ -12,7 +12,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">VEGETARIAN</Button>
+            <a href="/vegetarian"> <Button color="success">VEGETARIAN</Button></a>
             </CardBody>
           </Col>
 
@@ -20,7 +20,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">PEANUT FREE</Button>
+            <a href="/peanutfree"> <Button color="success">PEANUT FREE</Button></a>
             </CardBody>
           </Col>
         </Row>
@@ -31,8 +31,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-          
-              <Button color="success">GLUTEN FREE</Button>
+            <a href="/glutenfree"><Button color="success">GLUTEN FREE</Button></a>
             </CardBody>
           </Col>
 
@@ -40,7 +39,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">SEAFOOD FREE</Button>
+            <a href="/saefoodfree"><Button color="success">SEAFOOD FREE</Button></a>
             </CardBody>
           </Col>
         </Row>
@@ -50,7 +49,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">VEGAN</Button>
+            <a href="/vegan"><Button color="success">VEGAN</Button></a>
             </CardBody>
           </Col>
 
@@ -58,7 +57,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">DAIRY FREE </Button>
+            <a href="/dairyfree"><Button color="success">DAIRY FREE </Button></a>
             </CardBody>
           </Col>
         </Row>
@@ -68,7 +67,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">TREENUT FREE</Button>
+            <a href="/treenutfree"><Button color="success">TREENUT FREE</Button></a>
             </CardBody>
           </Col>
 
@@ -76,7 +75,7 @@ const Categories = () => {
           <Col className="categories-col">
             <img alt="Card" src="https://picsum.photos/300/200" />
             <CardBody>
-              <Button color="success">SOY FREE</Button>
+            <a href="/soyfree"> <Button color="success">SOY FREE</Button></a>
             </CardBody>
           </Col>
         </Row>
