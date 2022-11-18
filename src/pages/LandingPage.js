@@ -2,11 +2,17 @@
 import Categories from "../components/Categories";
 
 
-const LandingPage =() =>{
+const LandingPage =(props) =>{
+  
+  const pull_data = (data) => {
+    console.log(data); // LOGS DATA FROM CHILD (My name is Dean Winchester... &)
+  }
+
   return(
   <div>
 
-     <Categories/>
+    <Categories func={pull_data}/>
+
   </div>
   );
 };
