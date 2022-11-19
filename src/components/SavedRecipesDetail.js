@@ -1,6 +1,6 @@
 import { Col, Row, ListGroup, ListGroupItem, Container, Card, CardHeader, CardTitle, CardText, CardBody, CardFooter } from "reactstrap";
 
-const SavedRecipesDetail = () => {
+const SavedRecipesDetail = (props) => {
   return (
     <>
       <Container>
@@ -9,7 +9,7 @@ const SavedRecipesDetail = () => {
           <Col></Col>
           <Col>
             <Card>
-              <CardHeader tag='h1'>RecipeName</CardHeader>
+              <CardHeader tag='h1' className="cardheader">Title</CardHeader>
               <img src="chrome://branding/content/about-logo@2x.png" alt="" />
 
               <CardBody>

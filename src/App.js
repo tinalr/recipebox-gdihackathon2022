@@ -1,4 +1,6 @@
+
 import './App.css';
+
 import React, { useEffect, useState } from 'react';
 import {
   Routes,
@@ -36,16 +38,16 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2}/>} />
+        <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2} />} />
         <Route path='login' element={<LoginForm />} />
-        <Route path='register' element={<RegisterForm />}/>
+        <Route path='register' element={<RegisterForm />} />
         <Route path='about' element={<AboutUsPage />} />
-        <Route path='collections' element={<SavedRecipesPage />} >
-          
-        </Route>
+        <Route path='collections' element={<SavedRecipesPage />} />
+
+        <Route path='collections/:id' element={<SavedRecipesDetail />} />
 
 
-        <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
+        <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet} />} />
         <Route path='show/:id' element={<DisplayRecipe />} />
 
         {/* for testing only */}

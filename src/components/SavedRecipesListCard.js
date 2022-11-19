@@ -8,12 +8,13 @@ import {
   Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import SavedRecipesDetail from './SavedRecipesDetail';
 
 const SavedRecipesListCard = (props) => {
 
   return (
-    <Link to={`${props.data.id}`}>
-
+    // <Link to={`${props.data.id}`}>
+    <Link to={`/collections/${props.data.id}`}>
       <Card
         className="p-3 my-2 text-center"
         style={{

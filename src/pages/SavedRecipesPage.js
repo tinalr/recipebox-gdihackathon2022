@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import SavedRecipesListCard from '../components/SavedRecipesListCard';
+import { Outlet } from 'react-router-dom';
 
 const SavedRecipesPage = () => {
 
@@ -48,6 +49,8 @@ const SavedRecipesPage = () => {
         )
          })} 
       </Row>
+
+      <Outlet/>
     </Container>
   );
 };

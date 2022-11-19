@@ -23,3 +23,9 @@
 .navlink:hover {
   color: lightgrey;
 }
+
+.cardheader {
+  font-family: Vibur, cursive;
+  font-size: 2rem;
+  color: #70BA89;
+}
