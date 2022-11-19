@@ -116,7 +116,9 @@ const LandingPage = (props) => {
 
           <Col className="d-flex flex-column align-items-center justify-content-center">
 
-            <Row><h4 className=""><Col>Search Recipes by Diet</Col></h4></Row>
+            <Row className='my-4'>
+              <h3 className="h3">Search Recipes by Diet</h3>
+            </Row>
             <Row xs="2" className="mb-3">
               <Col>
                 <Card
@@ -124,31 +126,35 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardOne()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
+                    borderWidth: '0px',
+                    padding: '0px',
                     backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={veggiedip} className={(cardOneSelected) ? "opacity-75" : ""} />
-                  <p className={(cardOneSelected) ? "opacity-75 text-center" : "text-center"}>VEGETARIAN</p>
+                  <img alt="Card" src={veggiedip} className={(cardOneSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                  />
+                  <p className={(cardOneSelected) ? "opacity-100 text-center" : "text-center"}>VEGETARIAN</p>
                 </Card>
               </Col>
+              
               <Col>
                 <Card
                   className={(cardTwoSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardTwo()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
+                    borderWidth: '0px',
+                    padding: '0px',
                     backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={toast} className={(cardTwoSelected) ? "opacity-75" : ""} />
-                  <p className={(cardTwoSelected) ? "opacity-75 text-center" : "text-center"}>VEGAN</p>
+                  <img alt="Card" src={toast} className={(cardTwoSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardTwoSelected) ? "opacity-100 text-center" : "text-center"}>VEGAN</p>
                 </Card>
               </Col>
 
 
             </Row>
 
-            <Row><Col><h4 className="">Search Recipes by Intolerance(s)</h4></Col></Row>
+            <Row className='my-4'><h3 className="h3">Search Recipes by Intolerances</h3></Row>
             <Row xs="2" className="mb-3" >
               <Col>
                 {/* Card 3 */}
@@ -157,13 +163,14 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardThree()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={eggtoast} className={(cardThreeSelected) ? "opacity-75" : ""} />
-                  <p className={(cardThreeSelected) ? "opacity-75 text-center" : "text-center"}>SEAFOOD FREE</p>
+                  <img alt="Card" src={eggtoast} className={(cardThreeSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardThreeSelected) ? "opacity-100 text-center" : "text-center"}>SEAFOOD FREE</p>
                 </Card>
               </Col>
+
               <Col>
                 {/*Card 4 */}
                 <Card
@@ -171,14 +178,15 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardFour()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={pie} className={(cardFourSelected) ? "opacity-75" : ""} />
-                  <p className={(cardFourSelected) ? "opacity-75 text-center" : "text-center"}>GLUTEN FREE</p>
+                  <img alt="Card" src={pie} className={(cardFourSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardFourSelected) ? "opacity-100 text-center" : "text-center"}>GLUTEN FREE</p>
                 </Card>
               </Col>
             </Row>
+
             <Row xs="2" className="mb-3">
               <Col>
                 {/* Card 5 */}
@@ -187,13 +195,14 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardFive()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={bowl2} className={(cardFiveSelected) ? "opacity-75" : ""} />
-                  <p className={(cardFiveSelected) ? "opacity-75 text-center" : "text-center"}>TREENUT FREE</p>
+                  <img alt="Card" src={bowl2} className={(cardFiveSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardFiveSelected) ? "opacity-100 text-center" : "text-center"}>TREENUT FREE</p>
                 </Card>
               </Col>
+
               <Col>
                 {/*Card 6 */}
                 <Card
@@ -201,14 +210,15 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardSix()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={breakfast} className={(cardSixSelected) ? "opacity-75" : ""} />
-                  <p className={(cardSixSelected) ? "opacity-75 text-center" : "text-center"}>SHELLFISH FREE</p>
+                  <img alt="Card" src={breakfast} className={(cardSixSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardSixSelected) ? "opacity-100 text-center" : "text-center"}>SHELLFISH FREE</p>
                 </Card>
               </Col>
             </Row>
+
             <Row xs="2" className="mb-3">
               <Col>
                 {/* Card 7 */}
@@ -217,13 +227,14 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardSeven()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-75" : ""} />
-                  <p className={(cardSevenSelected) ? "opacity-75 text-center" : "text-center"}>DAIRY FREE</p>
+                  <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardSevenSelected) ? "opacity-100 text-center" : "text-center"}>DAIRY FREE</p>
                 </Card>
               </Col>
+
               <Col>
                 {/*Card 8 */}
                 <Card
@@ -231,19 +242,19 @@ const LandingPage = (props) => {
                   onClick={() => clickHandlerCardEight()}
                   style={{
                     width: '18rem',
-                    border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    borderWidth: '0px',
+                    padding: '0px',                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-75" : ""} />
-                  <p className={(cardEightSelected) ? "opacity-75 text-center" : "text-center"}>SOY FREE</p>
+                  <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <p className={(cardEightSelected) ? "opacity-100 text-center" : "text-center"}>SOY FREE</p>
                 </Card>
               </Col>
             </Row>
 
             <Row>
               <Col className="text-center">
-                <button className="m-3 btn btn-danger" onClick={() => clearIntolerances()}>Clear</button>
-                <button className="m-3 btn btn-primary" onClick={() => handleSubmit()}>Submit</button>
+                <Button className="m-3 btn-primary" onClick={() => clearIntolerances()}>Clear</Button>
+                <Button className="m-3" styles={{ backgroundColor: '#123B1F' }}  onClick={() => handleSubmit()}>Search</Button>
               </Col>
             </Row>
           </Col>

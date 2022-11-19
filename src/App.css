@@ -27,20 +27,43 @@
 .cardheader {
   background-color: #70BA89;
 }
+
 .h1 {
   font-family: Vibur, cursive;
   font-size: 2.3rem;
 }
+
 .h2 {
   font-family: Vibur, cursive;
   font-size: 2rem;
 }
+
 .h3 {
   font-family: Vibur, cursive;
   font-size: 1.7rem;
 }
+
 .h4 {
   font-family: Vibur, cursive;
   font-size: 1.5rem;
 }
 
+.footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #70BA89;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.img-thumbnail {
+  border: none;
+  border-radius: 0;
+}

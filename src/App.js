@@ -16,6 +16,7 @@ import SavedRecipesDetail from './components/SavedRecipesDetail';
 
 import Error from './components/Error';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import DisplayRecipe from './components/DisplayRecipe';
@@ -57,6 +58,8 @@ function App() {
         <Route element={Error} />
         {/* Error component isn't rendering when I use an incorrect path */}
       </Routes>
+      
+      <Footer/>
     </main>
   );
 }

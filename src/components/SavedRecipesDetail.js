@@ -9,8 +9,8 @@ const SavedRecipesDetail = (props) => {
         <Row>
          
           <Col>
-            <Card style={{
-              maxWidth: '50rem',
+            <Card className="card" style={{
+              maxWidth: '40rem',
               margin: 'auto'
             }}>
               <CardHeader tag='h1' className="cardheader h1">Title</CardHeader>
