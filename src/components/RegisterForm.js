@@ -102,7 +102,7 @@ const RegisterForm = () => {
                           backgroundColor: '#70BA89',
                           fontFamily: 'Vibur, cursive',
                         }}
-                        className="btn text-white">SUBMIT</button>
+                        className="btn btnhover text-white">SUBMIT</button>
                     </div>
                   </Col>
                 </form>

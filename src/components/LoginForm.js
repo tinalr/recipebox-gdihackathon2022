@@ -80,7 +80,7 @@ const LoginForm = () => {
                         backgroundColor: '#70BA89',
                         fontFamily: 'Vibur, cursive',
                       }}
-                      className="btn text-white">SUBMIT</button>
+                      className="btn btnhover text-white">SUBMIT</button>
                   </div>
                 </form>
                 <p className="text-center">Don't have an account? <a href="/register">Create one here</a></p>

@@ -48,7 +48,7 @@ const Gauri = () => {
           <CardText className="text-white">
             Read More
           </CardText>
-          <a href="www.linkedin.com/in/gtilloo"><img src={LinkedIn} alt="LinkedIn" 
+          <a href="https://www.linkedin.com/in/gtilloo"><img src={LinkedIn} alt="LinkedIn" 
           style={{
             width: '3rem'
           }} /></a>
