@@ -2,6 +2,8 @@
 
 ## Description
 
+Live URL: [https://www.notetochef-gdihackathon22.com/](https://www.notetochef-gdihackathon22.com/)
+
 Note to Chef is a tool to assist with planning for a variety of dietary needs by curating a collection of recipes that accommodates the user's requested dietary preferences.  
 
 ## Key Features
@@ -24,7 +26,7 @@ The following opensource software was used to support this app:
 
 ## Contributors
 
-This project was a product of GirlDevelopIt's Hack4Health22 Hackathon. Amazing contributions were made by these [developers](https://github.com/tinalr/recipebox-gdihackathon2022/graphs/contributors). 
+This project was a product of GirlDevelopIt's Hack4Health22 Hackathon. Amazing contributions were made by these [developers](https://www.notetochef-gdihackathon22.com/about). 
 
 ## License
 
