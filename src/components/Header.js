@@ -6,8 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
+  Container
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import banner from '../assets/imgs/banner.png'
 
 function Header(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +19,15 @@ function Header(args) {
   return (
     <div>
 
-      
-      <Navbar {...args} className='navbar-expand-lg bg-light'>
+        
+
+      <Navbar {...args} className='navbar-expand-lg container-fluid bg-light' fixed='top' style={{
+        
+      }}>
         <NavbarBrand href="/">Note to Chef</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto mb-2 mb-lg-0" navbar>
+          <Nav className="me-auto mb-2 mb-lg-0 mx-3" navbar>
             <NavItem className="me-3">
               <NavLink to="/">Home</NavLink>
             </NavItem>
@@ -50,6 +55,18 @@ function Header(args) {
           </Nav>
         </Collapse>
       </Navbar>
+
+      <Container fluid style={{
+        backgroundColor: '#123B1F',
+        backgroundImage: `url(${banner})`,
+        backgroundSize: '100%',
+        padding: '0',
+        height: '15rem'
+     }}>
+        {/* <img alt='decorative banner' className='img-fluid h-100' src={banner} style={{
+        }} /> */}
+     </Container>
+
     </div>
   );
 }
