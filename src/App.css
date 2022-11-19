@@ -1,31 +1,46 @@
-
 /* Causes text on all pages to become centered */
 /* .App {
   text-align: center;
 } */
 
-.logo{
-  max-width:150px;
+.logo {
+  max-width: 150px;
   max-height: 150px;
 }
 
 /* Categories */
-.categories-col{
-  padding:5px;
+.categories-col {
+  padding: 5px;
 }
 
 .navlink {
   color: white;
-      font-family: Vibur, cursive;
-      font-size: 1.5rem;
-      text-decoration: none
+  font-family: Vibur, cursive;
+  font-size: 1.5rem;
+  text-decoration: none
 }
+
 .navlink:hover {
   color: lightgrey;
 }
 
 .cardheader {
+  background-color: #70BA89;
+}
+.h1 {
+  font-family: Vibur, cursive;
+  font-size: 2.3rem;
+}
+.h2 {
   font-family: Vibur, cursive;
   font-size: 2rem;
-  color: #70BA89;
 }
+.h3 {
+  font-family: Vibur, cursive;
+  font-size: 1.7rem;
+}
+.h4 {
+  font-family: Vibur, cursive;
+  font-size: 1.5rem;
+}
+

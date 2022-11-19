@@ -9,26 +9,26 @@ const SavedRecipesDetail = (props) => {
           <Col></Col>
           <Col>
             <Card>
-              <CardHeader tag='h1' className="cardheader">Title</CardHeader>
-              <img src="chrome://branding/content/about-logo@2x.png" alt="" />
+              <CardHeader tag='h1' className="cardheader h1">Title</CardHeader>
+              <img src="chrome://branding/content/about-logo@2x.png" alt=""  className="img-thumbnail"/>
 
               <CardBody>
 
-                <CardTitle tag='h2'>Ingredients</CardTitle>
+                <CardTitle className='h2' tag='h2'>Ingredients</CardTitle>
                 <CardText>
                   <ListGroup>
                     <ListGroupItem>Ingredients</ListGroupItem>
                   </ListGroup>
                 </CardText>
 
-                <CardTitle tag='h2'>Steps</CardTitle>
+                <CardTitle className='h2' tag='h2'>Steps</CardTitle>
                 <CardText>
                   <ListGroup numbered>
-                    <ListGroupItem>Ingredients</ListGroupItem>
+                    <ListGroupItem>Steps</ListGroupItem>
                   </ListGroup>
                 </CardText>
                 
-                <CardTitle tag='h2'>Notes</CardTitle>
+                <CardTitle className='h2' tag='h2'>Notes</CardTitle>
                 <CardText>
                   recipe notes
                 </CardText>

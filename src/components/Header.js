@@ -45,10 +45,10 @@ function Header(args) {
             >
               <NavLink to="/" className='navlink'
                 style={{
-                // color: 'white',
-                // fontFamily: 'Vibur, cursive',
-                // fontSize: '1.5rem',
-                // textDecoration: 'none'
+                  // color: 'white',
+                  // fontFamily: 'Vibur, cursive',
+                  // fontSize: '1.5rem',
+                  // textDecoration: 'none'
                 }}
               >Home</NavLink>
             </NavItem>
