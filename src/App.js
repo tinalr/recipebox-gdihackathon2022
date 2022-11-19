@@ -40,7 +40,11 @@ function App() {
         <Route path='login' element={<LoginForm />} />
         <Route path='register' element={<RegisterForm />}/>
         <Route path='about' element={<AboutUsPage />} />
-        <Route path='collections' element={<SavedRecipesPage />} />
+        <Route path='collections' element={<SavedRecipesPage />} >
+          
+        </Route>
+
+
         <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
         <Route path='show/:id' element={<DisplayRecipe />} />
 
