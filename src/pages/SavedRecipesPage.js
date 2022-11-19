@@ -36,21 +36,35 @@ const SavedRecipesPage = () => {
   ];
 
   return (
-    <Container>
-      <h1 className="text-center">Saved Recipes</h1>
-      <Row xs="2">
-        {dummyData.map((data) => { 
-        return (
-        <Col key='data.id' sm="6">
-
-            <SavedRecipesListCard data={data} />
-
+    <Container
+      style={{
+        maxWidth: '40rem'
+      }}
+    >
+      <Row>
+        <Col>
+          <Row
+            className="text-center"
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+          >
+            <Col>
+              <h2 className="text-center">Your Saved Recipes</h2>
+            </Col>
+          </Row>
+          <Row xs="2" >
+            {dummyData.map((data) => {
+              return (
+                <Col key='data.id' sm="6">
+                  <SavedRecipesListCard data={data} />
+                </Col>
+              )
+            })}
+          </Row>
+          <Outlet />
         </Col>
-        )
-         })} 
       </Row>
-
-      <Outlet/>
     </Container>
   );
 };
