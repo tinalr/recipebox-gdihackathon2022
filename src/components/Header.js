@@ -22,7 +22,7 @@ function Header(args) {
 
 
 
-      <Navbar {...args} className='navbar-expand-lg container-fluid' fixed='top' style={{
+      <Navbar {...args} className='navbar-expand-md container-fluid' fixed='top' style={{
         backgroundColor: '#123B1F',
         padding: '0',
         boxShadow: '2px 0px 10px black'
