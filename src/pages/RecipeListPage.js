@@ -13,9 +13,12 @@ import {
   ModalBody,
   ModalFooter
 } from 'reactstrap';
-import ModalRecipeListDetail from '../components/ModalRecipeListDetail';
+// import ModalRecipeListDetail from '../components/ModalRecipeListDetail';
+import { useNavigate } from 'react-router-dom';
+
 
 const RecipeListPage = (props) => {
+  const navigate = useNavigate();
   const [responseData, setResponseData] = useState([]);
 
   // The API call:
@@ -36,9 +39,6 @@ const RecipeListPage = (props) => {
       .then(response => { setResponseData(response.data.results) })
   }, []);
   console.log(responseData);
-
-
-  
 
   return (
     <>
@@ -70,7 +70,7 @@ const RecipeListPage = (props) => {
                       </CardTitle>
                     </CardBody>
                     
-                    <ModalRecipeListDetail detail={responseData} />
+                    <a className="btn btn-dark" href={`/show/${responseData.id}`}>View Recipe</a>
                     
                   </Card>
                 </Col>
