@@ -35,8 +35,9 @@ const RegisterForm = () => {
             }}
           >
             <Row>
-              <Col>
-              <div style={{
+              <Col className="d-flex flex-column align-items-center justify-content-center">
+              <div 
+              style={{
                   width: '30rem',
                   height: '40rem',
                   position: 'relative',
@@ -102,7 +103,7 @@ const RegisterForm = () => {
                           backgroundColor: '#70BA89',
                           fontFamily: 'Vibur, cursive',
                         }}
-                        className="btn text-white">SUBMIT</button>
+                        className="btn btnhover text-white">SUBMIT</button>
                     </div>
                   </Col>
                 </form>

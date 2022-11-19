@@ -13,6 +13,7 @@ import SavedRecipesPage from './pages/SavedRecipesPage';
 import AboutUsPage from './pages/AboutUsPage';
 
 import SavedRecipesDetail from './components/SavedRecipesDetail';
+import CollectionsDetail from './components/CollectionsDetail';
 
 import Error from './components/Error';
 import Header from './components/Header';
@@ -45,6 +46,8 @@ function App() {
         <Route path='about' element={<AboutUsPage />} />
         <Route path='collections' element={<SavedRecipesPage />} />
         <Route path='collections/:id' element={<SavedRecipesDetail />} />
+        <Route path='collections/detail' element={<CollectionsDetail />} />
+
 
 
         <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet} />} />

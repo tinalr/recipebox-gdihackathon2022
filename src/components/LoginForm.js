@@ -32,7 +32,7 @@ const LoginForm = () => {
             }}
           >
             <Row>
-              <Col>
+              <Col className="d-flex flex-column align-items-center justify-content-center">
                 <div style={{
                   width: '30rem',
                   height: '40rem',
@@ -80,7 +80,7 @@ const LoginForm = () => {
                         backgroundColor: '#70BA89',
                         fontFamily: 'Vibur, cursive',
                       }}
-                      className="btn text-white">SUBMIT</button>
+                      className="btn btnhover text-white">SUBMIT</button>
                   </div>
                 </form>
                 <p className="text-center">Don't have an account? <a href="/register">Create one here</a></p>

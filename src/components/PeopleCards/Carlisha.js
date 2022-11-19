@@ -75,7 +75,7 @@ const Carlisha = () => {
             <div {...getCollapseProps()}>
               <div className="content">
                 <CardText className="mb-3">
-                  Carlisha is a Digital Artist studying to be a UX Researcher. When she is not studying, her time as a freelance photographer is spent empathizing with her clientele and creating a safe space where for anyone who finds themselves in front of her camera.
+                  Carlisha is a Digital Artist studying to be a UX Researcher. When she is not studying, her time as a freelance photographer is spent empathizing with her clientele and creating a safe space for anyone who finds themselves in front of her camera.
                 </CardText>
               </div>
             </div>

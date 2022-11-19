@@ -9,6 +9,7 @@ const SavedRecipesDetail = () => {
   const [stepsArray, setStepsArray] = useState([]);
   const [ingredientsArray, setIngredientsArray] = useState([]);
   const [title, setTitle] = useState("")
+  const navigate = useNavigate()
 
   // The API call:
   useEffect(() => {
@@ -45,8 +46,6 @@ const SavedRecipesDetail = () => {
               margin: 'auto'
             }}>
               <CardHeader tag='h1' className="cardheader h1">{title}</CardHeader>
-              <img src="chrome://branding/content/about-logo@2x.png" alt="" className="img-thumbnail" />
-
               <CardBody>
 
                 <CardTitle className='h2' tag='h2'>Ingredients</CardTitle>
@@ -90,7 +89,16 @@ const SavedRecipesDetail = () => {
             </Card>
           </Col>
         </Row>
-
+        <div className="text-center">
+          <button
+          style={{
+            backgroundColor: '#70BA89',
+            fontFamily: 'Vibur, cursive',
+          }}
+          className="m-3 btn btnhover btn-lg text-white"
+          onClick={() => navigate('/collections')}
+                >GO BACK</button>
+        </div>
       </Container>
     </>
   );

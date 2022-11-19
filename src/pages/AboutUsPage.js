@@ -11,6 +11,7 @@ import Mollie from '../components/PeopleCards/Mollie'
 import Carlisha from '../components/PeopleCards/Carlisha'
 import Bowl from '../assets/imgs/bowl.jpg'
 import Pie from '../assets/imgs/toast.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 import {
@@ -26,6 +27,7 @@ import {
 } from 'reactstrap';
 
 const AboutUsPage = () => {
+  const navigate = useNavigate()
   return (
     <Container>
       <Card className="mb-3"
@@ -42,20 +44,22 @@ const AboutUsPage = () => {
                   fontFamily: 'Vibur, cursive',
                 }}
               >Our Mission</h2>
-              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the app. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
+              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the forefront of the recipe search experience. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
               <p>
-                If you find a recipe you enjoy, you can save it to your profile for future use. A notes feature  on saved recipes provides the ability to list adaptations to the recipe, track the success and struggles with each attempt, and rank the recipe difficulty. You can also store recipes to a collection when planning large family gatherings.</p>
+                If you find a recipe you enjoy, you can register for an account and save them to your profile for future use. You can also store recipes in a collection to make it easy to account for diverse dietary needs when planning for large gatherings. Additionally, a notes feature for saved recipes provides the ability to list adaptations to the recipe, and track details on each attempt. </p>
               <p>"Note to Chef" makes it easy to take into consideration the unique dietary needs of yourself, and your guests!</p>
             </div>
           </Col>
-          <Col className="col-auto - variable width content">
-            <img
-              src={Bowl}
-              alt="Bowl"
-              style={{
-                width: '30rem'
-              }}
-            />
+          <Col className="col-auto d-flex flex-column justify-content-center align-items-center">
+            <div>
+              <img
+                src={Bowl}
+                alt="Bowl"
+                style={{
+                  maxWidth: '30rem'
+                }}
+              />
+            </div>
           </Col>
         </Row>
       </Card>
@@ -83,13 +87,12 @@ const AboutUsPage = () => {
         }}
       >
         <Row>
-          <Col className="col-auto - variable width content d-flex align-items-center">
+          <Col className="col-auto d-flex flex-column justify-content-center align-items-center">
             <img
               src={Pie}
               alt="Pie"
               style={{
-                width: '30rem'
-                // height: '100%'
+                maxWidth: '30rem'
               }}
             />
           </Col>
@@ -112,12 +115,15 @@ const AboutUsPage = () => {
             backgroundColor: '#70BA89'
           }}
         >
-          <button
-            className="btn text-white hover-dark"
-            style={{
-              backgroundColor: '#70BA89'
-            }}
-          >Github Repository</button>
+          <a  href="https://github.com/tinalr/recipebox-gdihackathon2022">
+            <button
+              className="btn text-white hover-dark"
+              style={{
+                fontFamily: 'Vibur, cursive',
+                backgroundColor: '#70BA89'
+              }}
+            >GITHUB REPOSITORY</button>
+          </a>
         </div>
       </Card>
     </Container>

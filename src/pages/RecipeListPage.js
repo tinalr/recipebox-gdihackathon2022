@@ -68,26 +68,35 @@ const RecipeListPage = (props) => {
                         key={responseData.id}
                         className="p-3 my-2 text-center"
                         style={{
-                          width: '18rem',
-                          height: '24rem',
+                          maxWidth: '18rem',
+                          maxHeight: '24rem',
                           backgroundColor: '#70BA89',
                           border: 'none',
                           fontFamily: 'Vibur, cursive'
                         }}
                       >
-                        <img
-                          className="align-self-center"
-                          alt={responseData.title}
-                          src={responseData.image}
-                          style={{
-                            width: '16rem',
-                            borderRadius: '0.5rem'
-                          }}
-                        />
-                        <CardBody>
-                          <CardTitle tag="h4" className="text-white" >
+                        <div style={{
+                          maxWidth: '256px',
+                          height: '256px',
+                          position: 'relative',
+                          overflow: 'hidden',
+                        }}>
+                          <img
+                            alt={responseData.title}
+                            src={responseData.image}
+                            style={{
+                              display: 'inline',
+                              margin: '0 auto',
+                              height: 'auto',
+                              maxWidth: '100%',
+                              borderRadius: '0.5rem'
+                            }}
+                          />
+                          <CardTitle tag="h4" className="text-white mt-3" >
                             {responseData.title}
                           </CardTitle>
+                        </div>
+                        <CardBody>
                         </CardBody>
                         <a className="btn btn-light" href={`/show/${responseData.id}`}>View Recipe</a>
                       </Card>
@@ -101,7 +110,7 @@ const RecipeListPage = (props) => {
                   backgroundColor: '#70BA89',
                   fontFamily: 'Vibur, cursive',
                 }}
-                className="m-3 btn btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
+                className="m-3 btn btnhover btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
             </div>
           </Col>
         </Row>
