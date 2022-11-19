@@ -111,71 +111,164 @@ const LandingPage = (props) => {
   return (
     <>
       <Container>
-
         <Row>
-
           <Col className="d-flex flex-column align-items-center justify-content-center">
-
-            <Row><h4 className=""><Col>Search Recipes by Diet</Col></h4></Row>
+            <Row
+              className="text-center"
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+            >
+              <Col>
+                <h2>Search Recipes by Diet</h2>
+                <p
+                  style={{
+                    color: '#70BA89',
+                  }}
+                >SELECT ONE OR NONE</p></Col>
+            </Row>
             <Row xs="2" className="mb-3">
               <Col>
                 <Card
-                  className={(cardOneSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardOne()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={veggiedip} className={(cardOneSelected) ? "opacity-75" : ""} />
-                  <p className={(cardOneSelected) ? "opacity-75 text-center" : "text-center"}>VEGETARIAN</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardOneSelected) ? "opacity-25" : ""}
+                      src={veggiedip}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardOneSelected) ? "text-center mt-3 text-black" : "text-center mt-3"}>VEGETARIAN</h3>
                 </Card>
               </Col>
               <Col>
                 <Card
-                  className={(cardTwoSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardTwo()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={toast} className={(cardTwoSelected) ? "opacity-75" : ""} />
-                  <p className={(cardTwoSelected) ? "opacity-75 text-center" : "text-center"}>VEGAN</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardTwoSelected) ? "opacity-25" : ""}
+                      src={toast}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardTwoSelected) ? "text-center mt-3 text-black" : "text-center mt-3"}>VEGAN</h3>
                 </Card>
               </Col>
-
-
             </Row>
-
-            <Row><Col><h4 className="">Search Recipes by Intolerance(s)</h4></Col></Row>
+            <Row
+              className="text-center"
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+            >
+              <Col>
+                <h2 className="mt-3">Search Recipes by Intolerances</h2>
+                <p
+                  style={{
+                    color: '#70BA89',
+                  }}
+                >SELECT UP TO SIX</p>
+              </Col>
+            </Row>
             <Row xs="2" className="mb-3" >
               <Col>
                 {/* Card 3 */}
                 <Card
-                  className={(cardThreeSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardThree()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={eggtoast} className={(cardThreeSelected) ? "opacity-75" : ""} />
-                  <p className={(cardThreeSelected) ? "opacity-75 text-center" : "text-center"}>SEAFOOD FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardThreeSelected) ? "opacity-25" : ""}
+                      src={eggtoast}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: 'auto',
+                        width: '100%'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardThreeSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>SEAFOOD</h3>
                 </Card>
               </Col>
               <Col>
                 {/*Card 4 */}
                 <Card
-                  className={(cardFourSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardFour()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={pie} className={(cardFourSelected) ? "opacity-75" : ""} />
-                  <p className={(cardFourSelected) ? "opacity-75 text-center" : "text-center"}>GLUTEN FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardFourSelected) ? "opacity-25" : ""}
+                      src={pie}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: 'auto',
+                        width: '100%'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardFourSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>GLUTEN</h3>
                 </Card>
               </Col>
             </Row>
@@ -183,29 +276,65 @@ const LandingPage = (props) => {
               <Col>
                 {/* Card 5 */}
                 <Card
-                  className={(cardFiveSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardFive()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={bowl2} className={(cardFiveSelected) ? "opacity-75" : ""} />
-                  <p className={(cardFiveSelected) ? "opacity-75 text-center" : "text-center"}>TREENUT FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardFiveSelected) ? "opacity-25" : ""}
+                      src={bowl2}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardFiveSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>TREE NUTS</h3>
                 </Card>
               </Col>
               <Col>
                 {/*Card 6 */}
                 <Card
-                  className={(cardSixSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardSix()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={breakfast} className={(cardSixSelected) ? "opacity-75" : ""} />
-                  <p className={(cardSixSelected) ? "opacity-75 text-center" : "text-center"}>SHELLFISH FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardSixSelected) ? "opacity-25" : ""}
+                      src={breakfast}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardSixSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>SHELLFISH</h3>
                 </Card>
               </Col>
             </Row>
@@ -213,37 +342,84 @@ const LandingPage = (props) => {
               <Col>
                 {/* Card 7 */}
                 <Card
-                  className={(cardSevenSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardSeven()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-75" : ""} />
-                  <p className={(cardSevenSelected) ? "opacity-75 text-center" : "text-center"}>DAIRY FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardSevenSelected) ? "opacity-25" : ""}
+                      src={bowl}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardSevenSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>DAIRY</h3>
                 </Card>
               </Col>
               <Col>
                 {/*Card 8 */}
                 <Card
-                  className={(cardEightSelected) ? "opacity-75 text-white" : "text-white"}
+                  className="text-white"
                   onClick={() => clickHandlerCardEight()}
                   style={{
                     width: '18rem',
                     border: '1rem solid #70BA89',
-                    backgroundColor: '#70BA89'
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
                   }}>
-                  <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-75" : ""} />
-                  <p className={(cardEightSelected) ? "opacity-75 text-center" : "text-center"}>SOY FREE</p>
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img
+                      className={(cardEightSelected) ? "opacity-25" : ""}
+                      src={pasta}
+                      alt="Food Picture"
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: 'auto',
+                        width: '100%'
+                      }}
+                    />
+                  </div>
+                  <h3 className={(cardEightSelected) ? "text-black text-center mt-3" : "text-center mt-3"}>SOY</h3>
                 </Card>
               </Col>
             </Row>
 
             <Row>
               <Col className="text-center">
-                <button className="m-3 btn btn-danger" onClick={() => clearIntolerances()}>Clear</button>
-                <button className="m-3 btn btn-primary" onClick={() => handleSubmit()}>Submit</button>
+                <button 
+                  style={{
+                    backgroundColor: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
+                  }}
+                  className="m-3 btn btn-lg text-white" onClick={() => clearIntolerances()}>CLEAR</button>
+                <button 
+                  style={{
+                    color: '#70BA89',
+                    fontFamily: 'Vibur, cursive',
+                    border: '1px solid #70BA89'
+                  }}
+                  className="m-3 btn btn-lg btn-white" onClick={() => handleSubmit()}>SUBMIT</button>
               </Col>
             </Row>
           </Col>
