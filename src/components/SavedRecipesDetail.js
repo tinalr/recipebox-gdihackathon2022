@@ -1,43 +1,46 @@
 import { Col, Row, ListGroup, ListGroupItem, Container, Card, CardHeader, CardTitle, CardText, CardBody, CardFooter } from "reactstrap";
 
-const SavedRecipesDetail = () => {
+const SavedRecipesDetail = (props) => {
   return (
     <>
-      <Container>
+      <Container style={{
+      }}>
 
-        <Row xl='3'>
-          <Col></Col>
+        <Row>
+         
           <Col>
-            <Card>
-              <CardHeader tag='h1'>RecipeName</CardHeader>
-              <img src="chrome://branding/content/about-logo@2x.png" alt="" />
+            <Card className="card" style={{
+              maxWidth: '40rem',
+              margin: 'auto'
+            }}>
+              <CardHeader tag='h1' className="cardheader h1">Title</CardHeader>
+              <img src="chrome://branding/content/about-logo@2x.png" alt="" className="img-thumbnail" />
 
               <CardBody>
 
-                <CardTitle tag='h2'>Ingredients</CardTitle>
+                <CardTitle className='h2' tag='h2'>Ingredients</CardTitle>
                 <CardText>
                   <ListGroup>
                     <ListGroupItem>Ingredients</ListGroupItem>
                   </ListGroup>
                 </CardText>
 
-                <CardTitle tag='h2'>Steps</CardTitle>
+                <CardTitle className='h2' tag='h2'>Steps</CardTitle>
                 <CardText>
                   <ListGroup numbered>
-                    <ListGroupItem>Ingredients</ListGroupItem>
+                    <ListGroupItem>Steps</ListGroupItem>
                   </ListGroup>
                 </CardText>
-                
-                <CardTitle tag='h2'>Notes</CardTitle>
+
+                <CardTitle className='h2' tag='h2'>Notes</CardTitle>
                 <CardText>
                   recipe notes
                 </CardText>
-                
+
               </CardBody>
 
             </Card>
           </Col>
-          <Col></Col>
         </Row>
 
       </Container>

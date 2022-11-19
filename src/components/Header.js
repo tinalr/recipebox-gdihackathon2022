@@ -45,21 +45,21 @@ function Header(args) {
             >
               <NavLink to="/" className='navlink'
                 style={{
-                // color: 'white',
-                // fontFamily: 'Vibur, cursive',
-                // fontSize: '1.5rem',
-                // textDecoration: 'none'
+                  // color: 'white',
+                  // fontFamily: 'Vibur, cursive',
+                  // fontSize: '1.5rem',
+                  // textDecoration: 'none'
                 }}
-              >Home</NavLink>
+              >HOME</NavLink>
             </NavItem>
             <NavItem className="me-3">
-              <NavLink className='navlink' to="about">About</NavLink>
+              <NavLink className='navlink' to="about">ABOUT</NavLink>
             </NavItem>
             <NavItem className="me-3">
-              <NavLink className='navlink' to='login'>Login</NavLink>
+              <NavLink className='navlink' to="collections">COLLECTIONS</NavLink>
             </NavItem>
             <NavItem className="me-3">
-              <NavLink className='navlink' to="collections">Collections</NavLink>
+              <NavLink className='navlink' to='login'>LOGIN</NavLink>
             </NavItem>
 
             {/* Commenting out the 'recipes' tab because we don't want users to navigate there directly, we want them to arrive there from the landing page after making selections */}
