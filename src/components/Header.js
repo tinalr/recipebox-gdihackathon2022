@@ -68,9 +68,9 @@ function Header(args) {
             </NavItem> */}
 
             {/* for testing only */}
-            <NavItem>
+            {/* <NavItem>
               <NavLink to='detail'>Detail-TESTING</NavLink>
-            </NavItem>
+            </NavItem> */}
             {/* for testing only */}
 
           </Nav>
