@@ -101,10 +101,12 @@ const LandingPage = (props) => {
             <Row xs="2" className="mb-3">
               <Col>
                 <Card
-                  className={(cardOneSelected) ? "opacity-75" : ""}
+                  className={(cardOneSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardOne()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardOneSelected) ? "opacity-75" : ""}/>
                   <p className={(cardOneSelected) ? "opacity-75 text-center" : "text-center"}>VEGETARIAN</p>
@@ -112,10 +114,12 @@ const LandingPage = (props) => {
               </Col>
               <Col>
                 <Card
-                  className={(cardTwoSelected) ? "opacity-75" : ""}
+                  className={(cardTwoSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardTwo()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardTwoSelected) ? "opacity-75" : ""}/>
                   <p className={(cardTwoSelected) ? "opacity-75 text-center" : "text-center"}>VEGAN</p>
@@ -128,10 +132,12 @@ const LandingPage = (props) => {
               <Col>
                 {/* Card 3 */}
                 <Card
-                  className={(cardThreeSelected) ? "opacity-75" : ""}
+                  className={(cardThreeSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardThree()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardThreeSelected) ? "opacity-75" : ""}/>
                   <p className={(cardThreeSelected) ? "opacity-75 text-center" : "text-center"}>SEAFOOD FREE</p>
@@ -140,10 +146,12 @@ const LandingPage = (props) => {
               <Col>
                 {/*Card 4 */}
                 <Card
-                  className={(cardFourSelected) ? "opacity-75" : ""}
+                  className={(cardFourSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardFour()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardFourSelected) ? "opacity-75" : ""}/>
                   <p className={(cardFourSelected) ? "opacity-75 text-center" : "text-center"}>GLUTEN FREE</p>
@@ -154,10 +162,12 @@ const LandingPage = (props) => {
               <Col>
                 {/* Card 5 */}
                 <Card
-                  className={(cardFiveSelected) ? "opacity-75" : ""}
+                  className={(cardFiveSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardFive()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardFiveSelected) ? "opacity-75" : ""}/>
                   <p className={(cardFiveSelected) ? "opacity-75 text-center" : "text-center"}>TREENUT FREE</p>
@@ -166,10 +176,12 @@ const LandingPage = (props) => {
               <Col>
                 {/*Card 6 */}
                 <Card
-                  className={(cardSixSelected) ? "opacity-75" : ""}
+                  className={(cardSixSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardSix()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardSixSelected) ? "opacity-75" : ""}/>
                   <p className={(cardSixSelected) ? "opacity-75 text-center" : "text-center"}>SHELLFISH FREE</p>
@@ -180,10 +192,12 @@ const LandingPage = (props) => {
               <Col>
                 {/* Card 7 */}
                 <Card
-                  className={(cardSevenSelected) ? "opacity-75" : ""}
+                  className={(cardSevenSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardSeven()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardSevenSelected) ? "opacity-75" : ""}/>
                   <p className={(cardSevenSelected) ? "opacity-75 text-center" : "text-center"}>DAIRY FREE</p>
@@ -192,20 +206,23 @@ const LandingPage = (props) => {
               <Col>
                 {/*Card 8 */}
                 <Card
-                  className={(cardEightSelected) ? "opacity-75" : ""}
+                  className={(cardEightSelected) ? "opacity-75 text-white" : "text-white"}
                   onClick={() => clickHandlerCardEight()}
                   style={{
-                    width: '18rem'
+                    width: '18rem',
+                    border: '1rem solid #70BA89',
+                    backgroundColor: '#70BA89'
                   }}>
                   <img alt="Card" src="https://picsum.photos/300/200" className={(cardEightSelected) ? "opacity-75" : ""}/>
-                  <p className={(cardEightSelected) ? "opacity-75 text-center" : "text-center"}>SOY FREE</p>
+                  <p 
+                  className={(cardEightSelected) ? "opacity-75 text-center" : "text-center"}>SOY FREE</p>
                 </Card>
               </Col>
             </Row>
             
             <Col className="text-center">
               <button className="m-3 btn btn-danger" onClick={() => clearIntolerances()}>Clear</button>
-              <button className="m-3 btn btn-primary" onClick={() => handleSubmit()}>Submit</button>
+              <button className="m-3 btn btn-dark" onClick={() => handleSubmit()}>Submit</button>
             </Col>
           </Col>
         </Row>
