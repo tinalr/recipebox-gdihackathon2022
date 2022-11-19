@@ -3,14 +3,18 @@ import { Col, Row, ListGroup, ListGroupItem, Container, Card, CardHeader, CardTi
 const SavedRecipesDetail = (props) => {
   return (
     <>
-      <Container>
+      <Container style={{
+      }}>
 
-        <Row xl='3'>
-          <Col></Col>
+        <Row>
+         
           <Col>
-            <Card>
+            <Card style={{
+              maxWidth: '50rem',
+              margin: 'auto'
+            }}>
               <CardHeader tag='h1' className="cardheader h1">Title</CardHeader>
-              <img src="chrome://branding/content/about-logo@2x.png" alt=""  className="img-thumbnail"/>
+              <img src="chrome://branding/content/about-logo@2x.png" alt="" className="img-thumbnail" />
 
               <CardBody>
 
@@ -27,17 +31,16 @@ const SavedRecipesDetail = (props) => {
                     <ListGroupItem>Steps</ListGroupItem>
                   </ListGroup>
                 </CardText>
-                
+
                 <CardTitle className='h2' tag='h2'>Notes</CardTitle>
                 <CardText>
                   recipe notes
                 </CardText>
-                
+
               </CardBody>
 
             </Card>
           </Col>
-          <Col></Col>
         </Row>
 
       </Container>
