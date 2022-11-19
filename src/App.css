@@ -71,3 +71,7 @@
   border: none;
   border-radius: 0;
 }
+
+.btnhover:hover {
+  opacity: 0.50;
+}

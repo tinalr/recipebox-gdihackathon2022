@@ -422,14 +422,14 @@ const LandingPage = (props) => {
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}
-                  className="m-3 btn btn-lg text-white" onClick={() => clearIntolerances()}>CLEAR</button>
+                  className="m-3 btn btnhover btn-lg text-white greenbtn" onClick={() => clearIntolerances()}>CLEAR</button>
                 <button 
                   style={{
                     color: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                     border: '1px solid #70BA89'
                   }}
-                  className="m-3 btn btn-lg btn-white" onClick={() => handleSubmit()}>SUBMIT</button>
+                  className="m-3 btn btnhover btn-lg btn-white" onClick={() => handleSubmit()}>SUBMIT</button>
               </Col>
             </Row>
           </Col>

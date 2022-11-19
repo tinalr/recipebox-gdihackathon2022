@@ -7,11 +7,12 @@ import {
   CardTitle,
   Button
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SavedRecipesListCard from '../components/SavedRecipesListCard';
 import { Outlet } from 'react-router-dom';
 
 const SavedRecipesPage = () => {
+  const navigate = useNavigate();
 
   //Dummy Data, placeholder for fetching data from backend:
   const dummyData = [
@@ -61,6 +62,40 @@ const SavedRecipesPage = () => {
                 </Col>
               )
             })}
+          </Row>
+          <Row
+            className="text-center mt-3"
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+          >
+            <Col>
+              <h2 className="text-center">Your Collections</h2>
+            </Col>
+          </Row>
+          <Row xs="2" >
+            <Col>
+              <Card
+                className="p-3 my-2 text-center"
+                style={{
+                  width: '18rem',
+                  // height: '24rem',
+                  backgroundColor: '#123B1F',
+                  border: 'none',
+                  fontFamily: 'Vibur, cursive'
+                }}
+              >
+                <CardBody>
+                  <CardTitle tag="h4" className="text-white">
+                    Thanksgiving 2022
+                  </CardTitle>
+                </CardBody>
+                <Button
+                  onClick={()=>{navigate('/collections/detail')}}
+                  className="btn btn-light"
+                >View My Collection</Button>
+              </Card>
+            </Col>
           </Row>
           <Outlet />
         </Col>

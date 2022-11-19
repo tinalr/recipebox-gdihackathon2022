@@ -42,9 +42,9 @@ const AboutUsPage = () => {
                   fontFamily: 'Vibur, cursive',
                 }}
               >Our Mission</h2>
-              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the app. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
+              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the recipe search. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
               <p>
-                If you find a recipe you enjoy, you can save it to your profile for future use. A notes feature  on saved recipes provides the ability to list adaptations to the recipe, track the success and struggles with each attempt, and rank the recipe difficulty. You can also store recipes to a collection when planning large family gatherings.</p>
+                If you find a recipe you enjoy, you can save it to your profile for future use. You can also save recipes to a collection to simplify planning large meals with diverse dietary requirements. Additionally, a notes feature provides the ability to track adaptations you mad on any saved recipe, and log the success or struggles with each attempt. </p>
               <p>"Note to Chef" makes it easy to take into consideration the unique dietary needs of yourself, and your guests!</p>
             </div>
           </Col>
@@ -109,11 +109,11 @@ const AboutUsPage = () => {
         <div
           className="text-end"
           style={{
-            backgroundColor: '#70BA89'
+            backgroundColor: '#70BA89',
           }}
         >
           <button
-            className="btn text-white hover-dark"
+            className="btn btnhover text-white greenbtn"
             style={{
               backgroundColor: '#70BA89'
             }}

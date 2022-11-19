@@ -9,6 +9,7 @@ const SavedRecipesDetail = () => {
   const [stepsArray, setStepsArray] = useState([]);
   const [ingredientsArray, setIngredientsArray] = useState([]);
   const [title, setTitle] = useState("")
+  const navigate = useNavigate()
 
   // The API call:
   useEffect(() => {
@@ -90,7 +91,16 @@ const SavedRecipesDetail = () => {
             </Card>
           </Col>
         </Row>
-
+        <div className="text-center">
+          <button
+          style={{
+            backgroundColor: '#70BA89',
+            fontFamily: 'Vibur, cursive',
+          }}
+          className="m-3 btn btnhover btn-lg text-white"
+          onClick={() => navigate('/collections')}
+                >GO BACK</button>
+        </div>
       </Container>
     </>
   );

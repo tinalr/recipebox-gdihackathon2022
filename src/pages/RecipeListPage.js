@@ -101,7 +101,7 @@ const RecipeListPage = (props) => {
                   backgroundColor: '#70BA89',
                   fontFamily: 'Vibur, cursive',
                 }}
-                className="m-3 btn btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
+                className="m-3 btn btnhover btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
             </div>
           </Col>
         </Row>
