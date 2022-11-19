@@ -1,3 +1,4 @@
+
 /* Causes text on all pages to become centered */
 /* .App {
   text-align: center;
@@ -11,4 +12,14 @@
 /* Categories */
 .categories-col{
   padding:5px;
+}
+
+.navlink {
+  color: white;
+      font-family: Vibur, cursive;
+      font-size: 1.5rem;
+      text-decoration: none
+}
+.navlink:hover {
+  color: lightgrey;
 }
