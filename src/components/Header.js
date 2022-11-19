@@ -59,7 +59,7 @@ function Header(args) {
               <NavLink className='navlink' to="collections">COLLECTIONS</NavLink>
             </NavItem>
             <NavItem className="me-3">
-              <NavLink className='navlink' to='login'>LOGIN</NavLink>
+              <NavLink className='text-success btnhover navlink' to='login'>LOGIN</NavLink>
             </NavItem>
 
             {/* Commenting out the 'recipes' tab because we don't want users to navigate there directly, we want them to arrive there from the landing page after making selections */}
