@@ -43,8 +43,7 @@ const RecipeListPage = (props) => {
   return (
     <>
       <Container>
-        <h1 className="text-center"></h1>
-        <p>Filters: {props.data}</p>
+        <h1 className="text-center">Your Recipe Selection</h1>
         <Row xs="2">
           {responseData &&
             responseData.map((responseData) => {
@@ -53,7 +52,8 @@ const RecipeListPage = (props) => {
                   <Card
                     className="p-3 my-2 text-center"
                     style={{
-                      height: '28rem'
+                      // height: '28rem',
+                      backgroundColor: '#70BA89'
                     }}
                   >
                     <img
@@ -61,16 +61,18 @@ const RecipeListPage = (props) => {
                       alt={responseData.title}
                       src={responseData.image}
                       style={{
-                        width: '25rem'
+                        width: '25rem',
+                        border: '1rem solid #70BA89',
+                        borderRadius: '1.5rem'
                       }}
                     />
                     <CardBody>
-                      <CardTitle tag="h5" >
+                      <CardTitle tag="h5" className="text-white" >
                         {responseData.title}
                       </CardTitle>
                     </CardBody>
                     
-                    <a className="btn btn-dark" href={`/show/${responseData.id}`}>View Recipe</a>
+                    <a className="btn btn-light" href={`/show/${responseData.id}`}>View Recipe</a>
                     
                   </Card>
                 </Col>
