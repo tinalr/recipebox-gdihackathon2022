@@ -2,9 +2,14 @@ import React from "react";
 
 const Footer = () => (
   <div className="footer">
-    <p> 
+    <h4
+    className="text-white"
+    style={{
+      fontFamily: 'Vibur, cursive',
+    }}
+    > 
       Built for Girl Develop It Virtual Hackathon 2022 © 
-    </p>
+    </h4>
   </div>
 );
 

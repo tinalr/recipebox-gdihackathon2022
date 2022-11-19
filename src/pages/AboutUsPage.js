@@ -119,9 +119,10 @@ const AboutUsPage = () => {
             <button
               className="btn text-white hover-dark"
               style={{
+                fontFamily: 'Vibur, cursive',
                 backgroundColor: '#70BA89'
               }}
-            >Github Repository</button>
+            >GITHUB REPOSITORY</button>
           </a>
         </div>
       </Card>
