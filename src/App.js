@@ -44,7 +44,6 @@ function App() {
         <Route path='register' element={<RegisterForm />} />
         <Route path='about' element={<AboutUsPage />} />
         <Route path='collections' element={<SavedRecipesPage />} />
-
         <Route path='collections/:id' element={<SavedRecipesDetail />} />
 
 
