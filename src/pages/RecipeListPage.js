@@ -89,7 +89,7 @@ const RecipeListPage = (props) => {
                             {responseData.title}
                           </CardTitle>
                         </CardBody>
-                        <a className="btn btn-light" href={`/show/${responseData.id}`}>VIEW</a>
+                        <a className="btn btn-light" href={`/show/${responseData.id}`}>View Recipe</a>
                       </Card>
                     </Col>
                   )
