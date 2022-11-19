@@ -29,16 +29,27 @@ const Kimberly = () => {
             alt="Profile Picture"
           />
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            tag="h3">
             Kimberly Suares
           </CardTitle>
           <CardSubtitle
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
             className="mb-2 text-muted"
-            tag="h6"
+            tag="h5"
           >
             Frontend Developer
           </CardSubtitle>
-          <CardText className="text-white">
+          <CardText 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            className="text-white">
             Read More
           </CardText>
           <a href="https://github.com/ksuares1"><img src={Github} alt="Github" 

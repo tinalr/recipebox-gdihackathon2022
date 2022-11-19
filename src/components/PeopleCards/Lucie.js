@@ -46,19 +46,30 @@ const Lucie = () => {
           />
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            tag="h3">
             Lucie Chevreuil
           </CardTitle>
           <CardSubtitle
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
             className="mb-2 text-muted"
-            tag="h6"
+            tag="h5"
           >
             Fullstack Developer
           </CardSubtitle>
           <div 
             className="collapsible"
           >
-            <div className="header text-primary mb-3" {...getToggleProps()}>
+            <div 
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+              className="header text-primary mb-3" {...getToggleProps()}>
               {isExpanded ? 'Read Less' : 'Read More'}
             </div>
             <div {...getCollapseProps()}>
