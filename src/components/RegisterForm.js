@@ -29,25 +29,37 @@ const RegisterForm = () => {
         <Col className="d-flex align-items-center justify-content-center">
           <Card
             style={{
-              width: '60rem'
+              width: '60rem',
+              fontFamily: 'Vibur, cursive',
+              border: '1rem solid #70BA89'
             }}
           >
             <Row>
               <Col>
-                <img
-                  src={PastaImg}
-                  alt="Pasta"
-                  style={{
-                    width: '30rem'
-                  }}
-                />
+              <div style={{
+                  width: '30rem',
+                  height: '40rem',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}>
+                  <img
+                    src={PastaImg}
+                    alt="Profile Picture"
+                    style={{
+                      display: 'inline',
+                      margin: '0 auto',
+                      height: 'auto',
+                      width: '100%'
+                    }}
+                  />
+                </div>
               </Col>
               <Col className="p-5">
-                <CardTitle tag="h5" className="text-center">
-                  Register
+                <CardTitle tag="h2" className="text-center">
+                  REGISTER
                 </CardTitle>
                 <form onSubmit={onSubmitHandler}>
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">NAME</label>
                   <input
                     className="form-control mb-3"
                     type="name"
@@ -56,7 +68,7 @@ const RegisterForm = () => {
                     value={name}
                     onChange={(e) => { setName(e.target.value) }}
                   />
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">EMAIL</label>
                   <input
                     className="form-control mb-3"
                     type="email"
@@ -65,7 +77,7 @@ const RegisterForm = () => {
                     value={email}
                     onChange={(e) => { setEmail(e.target.value) }}
                   />
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">PASSWORD</label>
                   <input
                     className="form-control mb-3"
                     type="password"
@@ -74,7 +86,7 @@ const RegisterForm = () => {
                     value={password}
                     onChange={(e) => { setPassword(e.target.value) }}
                   />
-                  <label htmlFor="confirm_password">Confirm Password</label>
+                  <label htmlFor="confirm_password">CONFIRM PASSWORD</label>
                   <input
                     className="form-control mb-3"
                     type="password"
@@ -83,7 +95,16 @@ const RegisterForm = () => {
                     value={confirmPassword}
                     onChange={(e) => { setConfirmPassword(e.target.value) }}
                   />
-                  <Col className="text-center"><button className="mb-3 btn btn-primary">Submit</button></Col>
+                  <Col className="text-center">
+                    <div className="text-center mb-3">
+                      <button
+                        style={{
+                          backgroundColor: '#70BA89',
+                          fontFamily: 'Vibur, cursive',
+                        }}
+                        className="btn text-white">SUBMIT</button>
+                    </div>
+                  </Col>
                 </form>
                 <p className="text-center">Already have an account? <a href="/login">Sign in</a></p>
               </Col>
