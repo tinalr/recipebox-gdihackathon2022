@@ -30,10 +30,30 @@ const DisplayRecipe = () => {
   }
 
   return (
-    <Container>
-      <div>{id}</div>
-      <button onClick={() => saveRecipe()}>Save Recipe</button>
-    </Container>
+      <Container className="mt-5"
+        style={{
+          border: '1rem solid #70BA89',
+          backgroundColor: 'white'
+        }}>
+        <h2>{id}</h2>
+        <Row>
+          <Col>
+            <img
+              className="col-auto d-flex align-items-center"
+              alt="#"
+              src="#"
+              style={{
+                width: '25rem'
+              }}
+            />
+          </Col>
+          <Col className="">
+            <Container>
+            </Container>
+          </Col>
+        </Row>
+        <button className="btn btn-dark" onClick={() => saveRecipe()}>Save Recipe</button>
+      </Container>
   )
 }
 
