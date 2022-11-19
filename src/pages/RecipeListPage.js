@@ -42,42 +42,69 @@ const RecipeListPage = (props) => {
 
   return (
     <>
-      <Container>
-        <h1 className="text-center">Your Recipe Selection</h1>
-        <Row xs="2">
-          {responseData &&
-            responseData.map((responseData) => {
-              return (
-                <Col key={responseData.id} sm="6">
-                  <Card
-                    className="p-3 my-2 text-center"
-                    style={{
-                      // height: '28rem',
-                      backgroundColor: '#70BA89'
-                    }}
-                  >
-                    <img
-                      className="align-self-center"
-                      alt={responseData.title}
-                      src={responseData.image}
-                      style={{
-                        width: '25rem',
-                        border: '1rem solid #70BA89',
-                        borderRadius: '1.5rem'
-                      }}
-                    />
-                    <CardBody>
-                      <CardTitle tag="h5" className="text-white" >
-                        {responseData.title}
-                      </CardTitle>
-                    </CardBody>
-                    
-                    <a className="btn btn-light" href={`/show/${responseData.id}`}>View Recipe</a>
-                    
-                  </Card>
-                </Col>
-              )
-            })}</Row>
+      <Container
+        style={{
+          maxWidth: '40rem'
+        }}
+      >
+        <Row>
+          <Col>
+            <Row
+              className="text-center"
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+            >
+              <Col>
+                <h2 className="text-center">Your Recipe Selection</h2>
+              </Col>
+            </Row>
+            <Row xs="2" >
+              {responseData &&
+                responseData.map((responseData) => {
+                  return (
+                    <Col>
+                      <Card
+                        key={responseData.id}
+                        className="p-3 my-2 text-center"
+                        style={{
+                          width: '18rem',
+                          height: '24rem',
+                          backgroundColor: '#70BA89',
+                          border: 'none',
+                          fontFamily: 'Vibur, cursive'
+                        }}
+                      >
+                        <img
+                          className="align-self-center"
+                          alt={responseData.title}
+                          src={responseData.image}
+                          style={{
+                            width: '16rem',
+                            borderRadius: '0.5rem'
+                          }}
+                        />
+                        <CardBody>
+                          <CardTitle tag="h4" className="text-white" >
+                            {responseData.title}
+                          </CardTitle>
+                        </CardBody>
+                        <a className="btn btn-light" href={`/show/${responseData.id}`}>VIEW</a>
+                      </Card>
+                    </Col>
+                  )
+                })}
+            </Row>
+            <div className="text-center">
+              <button
+                style={{
+                  backgroundColor: '#70BA89',
+                  fontFamily: 'Vibur, cursive',
+                }}
+                className="m-3 btn btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </>
   );

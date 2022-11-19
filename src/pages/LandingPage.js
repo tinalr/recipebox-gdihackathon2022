@@ -125,7 +125,8 @@ const LandingPage = (props) => {
                   style={{
                     color: '#70BA89',
                   }}
-                >SELECT ONE OR NONE</p></Col>
+                >SELECT ONE OR NONE</p>
+              </Col>
             </Row>
             <Row xs="2" className="mb-3">
               <Col>
@@ -143,6 +144,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardOneSelected) ? "opacity-25" : ""}
@@ -174,6 +176,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardTwoSelected) ? "opacity-25" : ""}
@@ -223,6 +226,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardThreeSelected) ? "opacity-25" : ""}
@@ -249,6 +253,7 @@ const LandingPage = (props) => {
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
+                    borderRadius: '0.5rem'
                   }}>
                   <div style={{
                     width: '256px',
@@ -264,7 +269,8 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: 'auto',
-                        width: '100%'
+                        width: '100%',
+                        borderRadius: '0.5rem'
                       }}
                     />
                   </div>
@@ -289,6 +295,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardFiveSelected) ? "opacity-25" : ""}
@@ -321,6 +328,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardSixSelected) ? "opacity-25" : ""}
@@ -355,6 +363,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardSevenSelected) ? "opacity-25" : ""}
@@ -387,6 +396,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img
                       className={(cardEightSelected) ? "opacity-25" : ""}
@@ -424,8 +434,6 @@ const LandingPage = (props) => {
             </Row>
           </Col>
         </Row>
-
-
       </Container>
     </>
   );
