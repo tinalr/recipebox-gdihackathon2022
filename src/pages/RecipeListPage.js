@@ -42,53 +42,68 @@ const RecipeListPage = (props) => {
 
   return (
     <>
-      <Container>
-        <h1 className="text-center h1">Your Recipe Selection</h1>
-        <Row sm="2" lg='3'>
-          {responseData &&
-            responseData.map((responseData) => {
-              return (
-                <Col key={responseData.id} className='d-flex flex-column align-items-center justify-content-center'>
-                  <Card
-                    className="my-2 text-center"
-                    style={{
-                      width: '256px',
-                      borderWidth: '0px',
-                      padding: '0px',
-                      backgroundColor: '#70BA89'
-                    }}
-                  >
-                    <div style={{
-                      width: '256px',
-                      height: '256px',
-                      position: 'relative',
-                      overflow: 'hidden',
-                    }}>
-                      <img
-                        className="align-self-center card-img-top"
-                        alt={responseData.title}
-                        src={responseData.image}
+      <Container
+        style={{
+          maxWidth: '40rem'
+        }}
+      >
+        <Row>
+          <Col>
+            <Row
+              className="text-center"
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+            >
+              <Col>
+                <h2 className="text-center">Your Recipe Selection</h2>
+              </Col>
+            </Row>
+            <Row xs="2" >
+              {responseData &&
+                responseData.map((responseData) => {
+                  return (
+                    <Col>
+                      <Card
+                        key={responseData.id}
+                        className="p-3 my-2 text-center"
                         style={{
-                          display: 'inline',
-                          margin: '0 auto',
-                          height: '100%',
-                          width: 'auto',
-                          borderRadius: '0px'
+                          width: '18rem',
+                          height: '24rem',
+                          backgroundColor: '#70BA89',
+                          border: 'none',
+                          fontFamily: 'Vibur, cursive'
                         }}
-                      />
-                    </div>
-                    <CardBody>
-                      <CardTitle tag="h4" className="text-white h4" >
-                        {responseData.title.toUpperCase()}
-                      </CardTitle>
-                    </CardBody>
-                    
-                    <Button className="h5 btn btn-light col-8 mx-auto m-2" href={`/show/${responseData.id}`}>View Recipe</Button>
-                    
-                  </Card>
-                </Col>
-              )
-            })}
+                      >
+                        <img
+                          className="align-self-center"
+                          alt={responseData.title}
+                          src={responseData.image}
+                          style={{
+                            width: '16rem',
+                            borderRadius: '0.5rem'
+                          }}
+                        />
+                        <CardBody>
+                          <CardTitle tag="h4" className="text-white" >
+                            {responseData.title}
+                          </CardTitle>
+                        </CardBody>
+                        <a className="btn btn-light" href={`/show/${responseData.id}`}>View Recipe</a>
+                      </Card>
+                    </Col>
+                  )
+                })}
+            </Row>
+            <div className="text-center">
+              <button
+                style={{
+                  backgroundColor: '#70BA89',
+                  fontFamily: 'Vibur, cursive',
+                }}
+                className="m-3 btn btn-lg text-white" onClick={() => navigate('/')}>BACK</button>
+            </div>
+          </Col>
         </Row>
       </Container>
     </>

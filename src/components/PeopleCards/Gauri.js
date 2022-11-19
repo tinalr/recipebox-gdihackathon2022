@@ -29,12 +29,19 @@ const Gauri = () => {
             alt="Profile Picture"
           />
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            tag="h3">
             Gauri Tilloo
           </CardTitle>
           <CardSubtitle
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
             className="mb-2 text-muted"
-            tag="h6"
+            tag="h5"
           >
             Project Manager
           </CardSubtitle>
