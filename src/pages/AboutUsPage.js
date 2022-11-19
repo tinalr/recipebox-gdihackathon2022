@@ -44,9 +44,9 @@ const AboutUsPage = () => {
                   fontFamily: 'Vibur, cursive',
                 }}
               >Our Mission</h2>
-              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the front page of the app. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
+              <p>"Note to Chef" makes adjusting for dietary accommodations simple by bringing common restrictions to the forefront of the recipe search experience. From the home page, select any number of overlapping dietary restrictions and a curated list of 10 top recipes will populate!</p>
               <p>
-                If you find a recipe you enjoy, you can save it to your profile for future use. A notes feature  on saved recipes provides the ability to list adaptations to the recipe, track the success and struggles with each attempt, and rank the recipe difficulty. You can also store recipes to a collection when planning large family gatherings.</p>
+                If you find a recipe you enjoy, you can register for an account and save them to your profile for future use. You can also store recipes in a collection to make it easy to account for diverse dietary needs when planning for large gatherings. Additionally, a notes feature for saved recipes provides the ability to list adaptations to the recipe, and track details on each attempt. </p>
               <p>"Note to Chef" makes it easy to take into consideration the unique dietary needs of yourself, and your guests!</p>
             </div>
           </Col>
@@ -93,7 +93,6 @@ const AboutUsPage = () => {
               alt="Pie"
               style={{
                 maxWidth: '30rem'
-                // height: '100%'
               }}
             />
           </Col>

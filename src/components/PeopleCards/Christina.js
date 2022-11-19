@@ -13,9 +13,12 @@ import {
 } from 'reactstrap';
 import Github from '../../assets/icons/github.png'
 import LinkedIn from '../../assets/icons/linkedin.png'
+import useCollapse from 'react-collapsed';
 
 
 const Christina = () => {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+
   return (
     <div>
       <Card
@@ -59,13 +62,24 @@ const Christina = () => {
           >
             Frontend Developer
           </CardSubtitle>
-          <CardText 
-            style={{
-              fontFamily: 'Vibur, cursive',
-            }}
-            className="text-white">
-            Read More
-          </CardText>
+          <div
+            className="collapsible"
+          >
+            <div 
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+              className="header text-primary mb-3" {...getToggleProps()}>
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </div>
+            <div {...getCollapseProps()}>
+              <div className="content">
+                <CardText className="mb-3">
+                Christina is a design-minded Frontend Developer and a higher education professional who holds a Master of Science in Higher Education Administration and Policy from Northwestern University. She is passionate about building beautiful and intuitive tools that meet users’ real needs. When she’s away from her computer, you will find her reading science fiction, crocheting, or walking with her dog, Satchel.
+                </CardText>
+              </div>
+            </div>
+          </div>
           <a href="https://github.com/tinalr"><img src={Github} alt="Github" 
           className="mx-2"
           style={{

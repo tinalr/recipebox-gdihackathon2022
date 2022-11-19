@@ -36,7 +36,7 @@ function Header(args) {
             textShadow: '2px 2px 1rem black'
           }}
         >Note to Chef</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler className="navbar-dark" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto mb-2 mb-lg-0 mx-3" navbar
             style={{}}

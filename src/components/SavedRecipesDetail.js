@@ -46,8 +46,6 @@ const SavedRecipesDetail = () => {
               margin: 'auto'
             }}>
               <CardHeader tag='h1' className="cardheader h1">{title}</CardHeader>
-              <img src="chrome://branding/content/about-logo@2x.png" alt="" className="img-thumbnail" />
-
               <CardBody>
 
                 <CardTitle className='h2' tag='h2'>Ingredients</CardTitle>
