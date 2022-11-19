@@ -125,7 +125,8 @@ const LandingPage = (props) => {
                   style={{
                     color: '#70BA89',
                   }}
-                >SELECT ONE OR NONE</p></Col>
+                >SELECT ONE OR NONE</p>
+              </Col>
             </Row>
             <Row xs="2" className="mb-3">
               <Col>
@@ -359,6 +360,7 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: '0.5rem'
                   }}>
                     <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-50 card-img-top" : "card-img-top"} style={{
                       display: 'inline',
@@ -412,8 +414,6 @@ const LandingPage = (props) => {
             </Row>
           </Col>
         </Row>
-
-
       </Container>
     </>
   );

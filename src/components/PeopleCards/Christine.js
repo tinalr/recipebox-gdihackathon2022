@@ -44,20 +44,32 @@ const Christine = () => {
               width: '100%'
             }}
           />
-        </div>        <CardBody>
-          <CardTitle tag="h5">
+        </div>
+        <CardBody>
+          <CardTitle 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            tag="h3">
             Christine Boegemann
           </CardTitle>
           <CardSubtitle
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
             className="mb-2 text-muted"
-            tag="h6"
+            tag="h5"
           >
             Backend Developer
           </CardSubtitle>
           <div
             className="collapsible"
           >
-            <div className="header text-primary mb-3" {...getToggleProps()}>
+            <div 
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+              className="header text-primary mb-3" {...getToggleProps()}>
               {isExpanded ? 'Read Less' : 'Read More'}
             </div>
             <div {...getCollapseProps()}>

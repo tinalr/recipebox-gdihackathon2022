@@ -28,21 +28,29 @@ const Polina = () => {
         <img
           src={Placeholder}
           alt="Profile Picture"
-        // style={{
-        //   borderRadius: '50%',
-        // }}
         />
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            tag="h3">
           Polina Hermans
           </CardTitle>
           <CardSubtitle
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
             className="mb-2 text-muted"
-            tag="h6"
+            tag="h5"
           >
             Frontend Developer
           </CardSubtitle>
-          <CardText className="text-white">
+          <CardText 
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+            className="text-white">
             Read More
           </CardText>
           <a href="https://github.com/ph202"><img src={Github} alt="Github" 

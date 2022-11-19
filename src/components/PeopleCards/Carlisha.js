@@ -24,7 +24,7 @@ const Carlisha = () => {
       <Card
         style={{
           width: '18rem',
-          border:'1rem solid #70BA89'
+          border: '1rem solid #70BA89'
         }}
       >
         <div style={{
@@ -44,36 +44,47 @@ const Carlisha = () => {
               width: '100%'
             }}
           />
-          </div>
-          <CardBody>
-            <CardTitle tag="h5">
-              Carlisha Wilson
-            </CardTitle>
-            <CardSubtitle
-              className="mb-2 text-muted"
-              tag="h6"
-            >
-              UX/UI, Design
-            </CardSubtitle>
-            <div 
+        </div>
+        <CardBody>
+          <CardTitle tag="h3"
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+          >
+            Carlisha Wilson
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+            tag="h5"
+            style={{
+              fontFamily: 'Vibur, cursive',
+            }}
+          >
+            UX/UI, Design
+          </CardSubtitle>
+          <div
             className="collapsible"
           >
-            <div className="header text-primary mb-3" {...getToggleProps()}>
+            <div 
+              style={{
+                fontFamily: 'Vibur, cursive',
+              }}
+              className="header text-primary mb-3" {...getToggleProps()}>
               {isExpanded ? 'Read Less' : 'Read More'}
             </div>
             <div {...getCollapseProps()}>
               <div className="content">
                 <CardText className="mb-3">
-                Carlisha is a Digital Artist studying to be a UX Researcher. When she is not studying, her time as a freelance photographer is spent empathizing with her clientele and creating a safe space where for anyone who finds themselves in front of her camera.
+                  Carlisha is a Digital Artist studying to be a UX Researcher. When she is not studying, her time as a freelance photographer is spent empathizing with her clientele and creating a safe space where for anyone who finds themselves in front of her camera.
                 </CardText>
               </div>
             </div>
           </div>
-            <a href="http://linkedin.com/in/carlishawilson"><img src={LinkedIn} alt="LinkedIn"
-              style={{
-                width: '3rem'
-              }} /></a>
-          </CardBody>
+          <a href="http://linkedin.com/in/carlishawilson"><img src={LinkedIn} alt="LinkedIn"
+            style={{
+              width: '3rem'
+            }} /></a>
+        </CardBody>
       </Card >
     </div >
   )

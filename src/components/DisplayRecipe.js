@@ -66,20 +66,15 @@ const DisplayRecipe = () => {
     <Container className="mt-5 text-center p-5"
       style={{
         border: '1rem solid #70BA89',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        maxWidth: '40rem'
       }}>
-      <h2 className="mb-3">{responseData.title} - ID: {id}</h2>
+      <h2 className="mb-3"
+        style={{
+          fontFamily: 'Vibur, cursive'
+        }}
+      >{responseData.title}</h2>
       <Row>
-        {/* <Col>
-            <img
-              className="col-auto d-flex align-items-center"
-              // alt={responseData.data.title}
-              // src={responseData.data.title}
-              style={{
-                width: '25rem'
-              }}
-            />
-          </Col> */}
         <Col className="">
           <Container className="mb-3">
             {htmlString &&
@@ -88,9 +83,21 @@ const DisplayRecipe = () => {
           </Container>
         </Col>
       </Row>
-      <button className="btn btn-primary mx-3" onClick={() => navigate('/recipes')}>Go Back</button>
-      <button className="btn btn-dark">Save Recipe</button>
-      {/* <button className="btn btn-dark" onClick={() => saveRecipe()}>Save Recipe</button> */}
+      <button
+        style={{
+          backgroundColor: '#70BA89',
+          fontFamily: 'Vibur, cursive',
+        }}
+        className="m-3 btn btn-lg text-white"
+        onClick={() => navigate('/recipes')}
+      >GO BACK</button>
+      <button
+        style={{
+          color: '#70BA89',
+          fontFamily: 'Vibur, cursive',
+          border: '1px solid #70BA89'
+        }}
+        className="m-3 btn btn-lg btn-white" onClick={() => navigate('/collections')}>SAVE</button>
     </Container>
   )
 }
