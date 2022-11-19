@@ -16,6 +16,7 @@ import Error from './components/Error';
 import Header from './components/Header';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
+import DisplayRecipe from './components/DisplayRecipe';
 
 
 function App() {
@@ -37,11 +38,11 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage func={pull_data} func2={pull_data2}/>} />
         <Route path='login' element={<LoginForm />} />
+        <Route path='register' element={<RegisterForm />}/>
         <Route path='about' element={<AboutUsPage />} />
         <Route path='saved-recipes' element={<SavedRecipesPage />} />
         <Route path='recipes' element={<RecipeListPage intolerances={stateDataIntolerances} diet={stateDataDiet}/>} />
-
-        <Route path='register' element={<RegisterForm />}/>
+        <Route path='show/:id' element={<DisplayRecipe />} />
 
         {/* for testing only */}
         <Route path='detail' element={<SavedRecipesDetail />} />
