@@ -13,9 +13,12 @@ import {
 } from 'reactstrap';
 import Github from '../../assets/icons/github.png'
 import LinkedIn from '../../assets/icons/linkedin.png'
+import useCollapse from 'react-collapsed';
 
 
 const Carlisha = () => {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+
   return (
     <div>
       <Card
@@ -52,9 +55,20 @@ const Carlisha = () => {
             >
               UX/UI, Design
             </CardSubtitle>
-            <CardText className="text-white">
-              Read More
-            </CardText>
+            <div 
+            className="collapsible"
+          >
+            <div className="header text-primary mb-3" {...getToggleProps()}>
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </div>
+            <div {...getCollapseProps()}>
+              <div className="content">
+                <CardText className="mb-3">
+                Carlisha is a Digital Artist studying to be a UX Researcher. When she is not studying, her time as a freelance photographer is spent empathizing with her clientele and creating a safe space where for anyone who finds themselves in front of her camera.
+                </CardText>
+              </div>
+            </div>
+          </div>
             <a href="http://linkedin.com/in/carlishawilson"><img src={LinkedIn} alt="LinkedIn"
               style={{
                 width: '3rem'

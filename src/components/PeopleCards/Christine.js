@@ -12,6 +12,7 @@ import {
   CardBody
 } from 'reactstrap';
 import Github from '../../assets/icons/github.png'
+import LinkedIn from '../../assets/icons/linkedin.png'
 import useCollapse from 'react-collapsed';
 
 
@@ -23,7 +24,7 @@ const Christine = () => {
       <Card
         style={{
           width: '18rem',
-          border:'1rem solid #70BA89'
+          border: '1rem solid #70BA89'
         }}
       >
         <div style={{
@@ -53,7 +54,7 @@ const Christine = () => {
           >
             Backend Developer
           </CardSubtitle>
-          <div 
+          <div
             className="collapsible"
           >
             <div className="header text-primary mb-3" {...getToggleProps()}>
@@ -70,10 +71,15 @@ const Christine = () => {
           <a href="https://github.com/cboegemann"><img
             src={Github}
             alt="Github"
+            className="mx-2"
             style={{
               width: '3rem'
             }}
           /></a>
+          <a href="https://www.linkedin.com/in/christineboegemann/"><img src={LinkedIn} alt="LinkedIn"
+            style={{
+              width: '3rem'
+            }} /></a>
         </CardBody>
       </Card>
     </div>

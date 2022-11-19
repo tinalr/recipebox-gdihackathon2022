@@ -58,13 +58,13 @@ const AboutUsPage = () => {
       <Row className="d-flex align-items-center justify-content-center">
         <h2 className="text-center mt-5 mb-3">Our Team</h2>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Christine /></Col>
-        <Col className="d-flex align-items-center justify-content-center mb-3"><Polina /></Col>
+        <Col className="d-flex align-items-center justify-content-center mb-3"><Carlisha /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Lucie /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Christina /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Kimberly /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Gauri /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Mollie /></Col>
-        <Col className="d-flex align-items-center justify-content-center mb-3"><Carlisha /></Col>
+        <Col className="d-flex align-items-center justify-content-center mb-3"><Polina /></Col>
         <Col className="d-flex align-items-center justify-content-center mb-3"><Lindsay /></Col>
       </Row>
       <Card className="mb-3"

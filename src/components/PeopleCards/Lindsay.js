@@ -21,7 +21,7 @@ const Lindsay = () => {
       <Card
         style={{
           width: '18rem',
-          border:'1rem solid #70BA89'
+          border: '1rem solid #70BA89'
         }}
       >
         <img
@@ -33,7 +33,7 @@ const Lindsay = () => {
         />
         <CardBody>
           <CardTitle tag="h5">
-          Lindsay Rogers
+            Lindsay Rogers
           </CardTitle>
           <CardSubtitle
             className="mb-2 text-muted"
@@ -42,8 +42,17 @@ const Lindsay = () => {
             Backend Developer
           </CardSubtitle>
           <CardText className="text-white">
-              Read More
-            </CardText>
+            Read More
+          </CardText>
+          <a href="https://github.com/lindsRogers"><img src={Github} alt="Github"
+            className="mx-2"
+            style={{
+              width: '3rem'
+            }} /></a>
+          <a href="https://www.linkedin.com/in/lindsay-rogers-/"><img src={LinkedIn} alt="LinkedIn"
+            style={{
+              width: '3rem'
+            }} /></a>
         </CardBody>
       </Card>
     </div>
