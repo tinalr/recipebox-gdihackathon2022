@@ -134,13 +134,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardOne()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -154,7 +154,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: '100%',
-                        width: 'auto'
+                        maxWidth: 'auto'
                       }}
                     />
                   </div>
@@ -166,13 +166,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardTwo()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -186,7 +186,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: '100%',
-                        width: 'auto'
+                        maxWidth: 'auto'
                       }}
                     />
                   </div>
@@ -216,13 +216,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardThree()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -236,7 +236,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: 'auto',
-                        width: '100%'
+                        maxWidth: '100%'
                       }}
                     />
                   </div>
@@ -249,14 +249,14 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardFour()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                     borderRadius: '0.5rem'
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -269,7 +269,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: 'auto',
-                        width: '100%',
+                        maxWidth: '100%',
                         borderRadius: '0.5rem'
                       }}
                     />
@@ -285,13 +285,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardFive()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -305,7 +305,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: '100%',
-                        width: 'auto'
+                        maxWidth: 'auto'
                       }}
                     />
                   </div>
@@ -318,13 +318,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardSix()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -338,7 +338,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: '100%',
-                        width: 'auto'
+                        maxWidth: 'auto'
                       }}
                     />
                   </div>
@@ -353,13 +353,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardSeven()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -373,7 +373,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: '100%',
-                        width: 'auto'
+                        maxWidth: 'auto'
                       }}
                     />
                   </div>
@@ -386,13 +386,13 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardEight()}
                   style={{
-                    width: '18rem',
+                    maxWidth: '18rem',
                     border: '1rem solid #70BA89',
                     backgroundColor: '#70BA89',
                     fontFamily: 'Vibur, cursive',
                   }}>
                   <div style={{
-                    width: '256px',
+                    maxWidth: '256px',
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
@@ -406,7 +406,7 @@ const LandingPage = (props) => {
                         display: 'inline',
                         margin: '0 auto',
                         height: 'auto',
-                        width: '100%'
+                        maxWidth: '100%'
                       }}
                     />
                   </div>

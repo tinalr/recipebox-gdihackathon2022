@@ -15,36 +15,44 @@ const SavedRecipesListCard = (props) => {
   const navigate = useNavigate();
 
   return (
-    // <Link to={`${props.data.id}`}>
-      <Card
-        className="p-3 my-2 text-center"
-        style={{
-          width: '18rem',
-          height: '24rem',
-          backgroundColor: '#70BA89',
-          border: 'none',
-          fontFamily: 'Vibur, cursive'
-        }}
-      >
+    <Card
+      className="p-3 my-2 text-center"
+      style={{
+        maxWidth: '18rem',
+        height: '24rem',
+        backgroundColor: '#70BA89',
+        border: 'none',
+        fontFamily: 'Vibur, cursive'
+      }}
+    >
+      <div style={{
+        maxWidth: '256px',
+        height: '256px',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
         <img
-          className="align-self-center"
-          alt={props.data.title}
-          src={props.data.image}
+        alt={props.data.title}
+        src={props.data.image}
           style={{
-            width: '16rem',
+            display: 'inline',
+            margin: '0 auto',
+            height: 'auto',
+            maxWidth: '100%',
             borderRadius: '0.5rem'
           }}
         />
-        <CardBody>
-          <CardTitle tag="h4" className="text-white">
-            {props.data.title}
-          </CardTitle>
-        </CardBody>
-        <Button 
-          onClick={()=> navigate(`/collections/${props.data.id}`)}
-          className="btn btn-light"
-          >View My Recipe</Button>
-      </Card>
+        <CardTitle tag="h4" className="text-white mt-3" >
+          {props.data.title}
+        </CardTitle>
+      </div>
+      <CardBody>
+      </CardBody>
+      <Button
+        onClick={() => navigate(`/collections/${props.data.id}`)}
+        className="btn btn-light"
+      >View My Recipe</Button>
+    </Card>
   );
 };
 export default SavedRecipesListCard;

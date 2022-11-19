@@ -50,14 +50,16 @@ const AboutUsPage = () => {
               <p>"Note to Chef" makes it easy to take into consideration the unique dietary needs of yourself, and your guests!</p>
             </div>
           </Col>
-          <Col className="col-auto - variable width content">
-            <img
-              src={Bowl}
-              alt="Bowl"
-              style={{
-                width: '30rem'
-              }}
-            />
+          <Col className="col-auto d-flex flex-column justify-content-center align-items-center">
+            <div>
+              <img
+                src={Bowl}
+                alt="Bowl"
+                style={{
+                  maxWidth: '30rem'
+                }}
+              />
+            </div>
           </Col>
         </Row>
       </Card>
@@ -85,12 +87,12 @@ const AboutUsPage = () => {
         }}
       >
         <Row>
-          <Col className="col-auto - variable width content d-flex align-items-center">
+          <Col className="col-auto d-flex flex-column justify-content-center align-items-center">
             <img
               src={Pie}
               alt="Pie"
               style={{
-                width: '30rem'
+                maxWidth: '30rem'
                 // height: '100%'
               }}
             />

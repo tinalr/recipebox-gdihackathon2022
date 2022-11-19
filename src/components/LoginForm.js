@@ -32,7 +32,7 @@ const LoginForm = () => {
             }}
           >
             <Row>
-              <Col>
+              <Col className="d-flex flex-column align-items-center justify-content-center">
                 <div style={{
                   width: '30rem',
                   height: '40rem',

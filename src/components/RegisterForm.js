@@ -35,8 +35,9 @@ const RegisterForm = () => {
             }}
           >
             <Row>
-              <Col>
-              <div style={{
+              <Col className="d-flex flex-column align-items-center justify-content-center">
+              <div 
+              style={{
                   width: '30rem',
                   height: '40rem',
                   position: 'relative',

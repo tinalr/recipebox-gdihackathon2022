@@ -78,8 +78,7 @@ const SavedRecipesPage = () => {
               <Card
                 className="p-3 my-2 text-center"
                 style={{
-                  width: '18rem',
-                  // height: '24rem',
+                  maxWidth: '18rem',
                   backgroundColor: '#123B1F',
                   border: 'none',
                   fontFamily: 'Vibur, cursive'
