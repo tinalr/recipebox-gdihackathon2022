@@ -144,7 +144,8 @@ const LandingPage = (props) => {
                     height: '256px',
                     position: 'relative',
                     overflow: 'hidden',
-                  }}>
+                  }}
+                  >
                     <img alt="Card" src={veggiedip} className={(cardOneSelected) ? "opacity-50 card-img-top" : "card-img-top"}
                       style={{
                         display: 'inline',
@@ -164,12 +165,31 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardTwo()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
                     padding: '0px',
+                    fontFamily: 'Vibur, cursive',
                     backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={toast} className={(cardTwoSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div
+                    style={{
+                      width: '256px',
+                      height: '256px',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <img alt="Card" src={toast}
+                      className={(cardTwoSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto',
+                        borderRadius: '0px'
+                      }}
+                    />
+                  </div>
                   <p className={(cardTwoSelected) ? "opacity-100 text-center" : "text-center"}>VEGAN</p>
                 </Card>
               </Col>
@@ -195,11 +215,29 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardThree()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={eggtoast} className={(cardThreeSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div
+                    style={{
+                      width: '256px',
+                      height: '256px',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <img alt="Card" src={eggtoast} className={(cardThreeSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: 'auto',
+                        width: '100%',
+                        borderRadius: '0px'
+                      }} />
+                  </div>
                   <p className={(cardThreeSelected) ? "opacity-100 text-center" : "text-center"}>SEAFOOD FREE</p>
                 </Card>
               </Col>
@@ -210,11 +248,28 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardFour()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={pie} className={(cardFourSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}
+                  >
+                    <img alt="Card" src={pie} className={(cardFourSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: 'auto',
+                        width: '100%',
+                        borderRadius: '0px'
+                      }} />
+                  </div>
                   <p className={(cardFourSelected) ? "opacity-100 text-center" : "text-center"}>GLUTEN FREE</p>
                 </Card>
               </Col>
@@ -227,11 +282,28 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardFive()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={bowl2} className={(cardFiveSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}
+                  >
+                    <img alt="Card" src={bowl2} className={(cardFiveSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto',
+                        borderRadius: '0px'
+                      }} />
+                  </div>
                   <p className={(cardFiveSelected) ? "opacity-100 text-center" : "text-center"}>TREENUT FREE</p>
                 </Card>
               </Col>
@@ -242,11 +314,28 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardSix()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={breakfast} className={(cardSixSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div
+                    style={{
+                      width: '256px',
+                      height: '256px',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}>
+                    <img alt="Card" src={breakfast} className={(cardSixSelected) ? "opacity-50 card-img-top" : "card-img-top"}
+                      style={{
+                        display: 'inline',
+                        margin: '0 auto',
+                        height: '100%',
+                        width: 'auto',
+                        borderRadius: '0px'
+                      }} />
+                  </div>
                   <p className={(cardSixSelected) ? "opacity-100 text-center" : "text-center"}>SHELLFISH FREE</p>
                 </Card>
               </Col>
@@ -259,11 +348,26 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardSeven()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div style={{
+                    width: '256px',
+                    height: '256px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                    <img alt="Card" src={bowl} className={(cardSevenSelected) ? "opacity-50 card-img-top" : "card-img-top"} style={{
+                      display: 'inline',
+                      margin: '0 auto',
+                      height: '100%',
+                      width: 'auto',
+                      borderRadius: '0px'
+                    }} />
+                  </div>
                   <p className={(cardSevenSelected) ? "opacity-100 text-center" : "text-center"}>DAIRY FREE</p>
                 </Card>
               </Col>
@@ -274,11 +378,27 @@ const LandingPage = (props) => {
                   className="text-white"
                   onClick={() => clickHandlerCardEight()}
                   style={{
-                    width: '18rem',
+                    width: '256px',
                     borderWidth: '0px',
-                    padding: '0px', backgroundColor: '#70BA89'
+                    padding: '0px',
+                    fontFamily: 'Vibur, cursive',
+                    backgroundColor: '#70BA89'
                   }}>
-                  <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-50 card-img-top" : "card-img-top"} />
+                  <div
+                    style={{
+                      width: '256px',
+                      height: '256px',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}>
+                    <img alt="Card" src={pasta} className={(cardEightSelected) ? "opacity-50 card-img-top" : "card-img-top"} style={{
+                      display: 'inline',
+                      margin: '0 auto',
+                      height: 'auto',
+                      width: '100%',
+                      borderRadius: '0px'
+                    }} />
+                  </div>
                   <p className={(cardEightSelected) ? "opacity-100 text-center" : "text-center"}>SOY FREE</p>
                 </Card>
               </Col>

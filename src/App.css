@@ -45,7 +45,11 @@
 
 .h4 {
   font-family: Vibur, cursive;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.h5 {
+  font-family: Vibur, cursive;
+  font-size: 1rem;
 }
 
 .footer {
