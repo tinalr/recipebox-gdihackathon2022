@@ -1,3 +1,4 @@
+![Mobile View](/README_imgs/readmeBanner.png)
 # **Note to Chef**
 ### 🏆 Winner of the "Spirit of GDI Award" 🏆  
 Girl Develop It's 2nd Annual Hackathon  
