@@ -13,6 +13,12 @@ Note to Chef is a tool to assist with planning for a variety of dietary needs by
 - Once registered, the user can save recipes to a profile for future use.
 - Recipes can be saved to a collection to assist with planning for large family gatherings. 
 
+## Mobile View
+<img align="center" src="/README_imgs/mobile.gif" alt="Mobile View"
+
+## Desktop View
+<img align="center" src="/README_imgs/desktop.gif" alt="Desktop View"
+
 ## How to Use
 
 Download and install the latest version of .NET from Microsoft [here](https://dotnet.microsoft.com/en-us/download).
