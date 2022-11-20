@@ -1,5 +1,5 @@
 ![Mobile View](/README_imgs/readmeBanner.png)
-# **Note to Chef**
+# **Note to Chef - Recipe App**
 ### 🏆 Winner of the "Spirit of GDI Award" 🏆  
 Girl Develop It's 2nd Annual Hackathon  
 
