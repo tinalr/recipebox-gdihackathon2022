@@ -14,7 +14,7 @@ Note to Chef is a tool to assist with planning for a variety of dietary needs by
 - Recipes can be saved to a collection to assist with planning for large family gatherings. 
 
 ## Mobile View
-![Mobile View](/README_imgs/desktop.gif)
+![Mobile View](/README_imgs/mobile.gif)
 
 ## Desktop View
 ![Desktop View](/README_imgs/desktop.gif)
