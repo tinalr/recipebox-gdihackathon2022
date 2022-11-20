@@ -1,4 +1,10 @@
 # **Note to Chef**
+### 🏆 Winner of the "Spirit of GDI Award" 🏆  
+Girl Develop It's 2nd Annual Hackathon  
+
+Winner - Spirit of GDI Award Youtube Link - https://lnkd.in/gahiATKP  
+"Note to Chef" Project Presentation Youtube Link - https://lnkd.in/g6HdXYv9  
+GirlDevelopIt Website - https://girldevelopit.com/  
 
 ## Description
 
